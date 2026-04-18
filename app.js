@@ -1,9 +1,18 @@
 /**
- * BLM0462 Vize Quiz — tek soru modu, anında doğru/yanlış
+ * BLM0462 Vize Quiz — sınav modu, skor, yanlış gözden geçirme
  */
 (function () {
   function letterFor(i) {
     return String.fromCharCode(65 + i);
+  }
+
+  function shuffleArray(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
   }
 
   function normalizeANS(s) {
@@ -46,9 +55,19 @@
 
   let data = null;
   let queue = [];
+  let queueSaved = null;
   let currentIndex = 0;
   let filter = "all";
   let topicFilter = "all";
+  let reviewWrongMode = false;
+
+  let statsCorrect = 0;
+  let statsWrong = 0;
+  /** @type Set<string> */
+  const countedResults = new Set();
+  /** @type Set<string> */
+  const wrongKeySet = new Set();
+
   /**
    * @type Map<string, {
    *   revealed: boolean,
@@ -77,31 +96,195 @@
     progress: document.getElementById("progress"),
     btnReset: document.getElementById("btn-reset"),
     topicSelect: document.getElementById("topic-filter"),
+    statCorrect: document.getElementById("stat-correct"),
+    statWrong: document.getElementById("stat-wrong"),
+    statAnswered: document.getElementById("stat-answered"),
+    btnWrongReview: document.getElementById("btn-wrong-review"),
+    examDetails: document.getElementById("exam-details"),
+    examTopicBoxes: document.getElementById("exam-topic-boxes"),
+    examTopicsAll: document.getElementById("exam-topics-all"),
+    examTypeMcq: document.getElementById("exam-type-mcq"),
+    examTypeFib: document.getElementById("exam-type-fib"),
+    examTypeTf: document.getElementById("exam-type-tf"),
+    examCount: document.getElementById("exam-count"),
+    examShuffle: document.getElementById("exam-shuffle"),
+    examMaxHint: document.getElementById("exam-max-hint"),
+    btnStartExam: document.getElementById("btn-start-exam"),
   };
 
   function getKey(item) {
     return `${item.type}-${item.data.id}`;
   }
 
-  function buildQueue() {
+  /** applyToolbarTopic: üstteki "Konu" açılır listesini uygula (serbest çalışma). */
+  function buildBasePool(typeFilter, applyToolbarTopic) {
     const mcq = data.mcq.map((q) => ({ type: "mcq", data: q }));
     const fib = data.fib.map((q) => ({ type: "fib", data: q }));
     const tf = (data.tf || []).map((q) => ({ type: "tf", data: q }));
     let items;
-    if (filter === "mcq") items = mcq;
-    else if (filter === "fib") items = fib;
-    else if (filter === "tf") items = tf;
+    if (typeFilter === "mcq") items = mcq;
+    else if (typeFilter === "fib") items = fib;
+    else if (typeFilter === "tf") items = tf;
     else items = [...mcq, ...fib, ...tf];
-    if (topicFilter !== "all") {
+
+    if (applyToolbarTopic && topicFilter !== "all") {
       items = items.filter((it) => (it.data.topic || "") === topicFilter);
     }
     return items;
+  }
+
+  function filterPoolByTopics(items, topicIds) {
+    if (topicIds == null) return items;
+    if (!topicIds.length) return [];
+    const set = new Set(topicIds);
+    return items.filter((it) => set.has(it.data.topic || ""));
+  }
+
+  function filterPoolByTypes(items, useMcq, useFib, useTf) {
+    if (useMcq && useFib && useTf) return items;
+    return items.filter((it) => {
+      if (it.type === "mcq") return useMcq;
+      if (it.type === "fib") return useFib;
+      if (it.type === "tf") return useTf;
+      return false;
+    });
+  }
+
+  function buildQueue() {
+    return buildBasePool(filter, true);
+  }
+
+  function countMaxPoolForExam() {
+    const topicIds = getSelectedExamTopicIds();
+    const useMcq = els.examTypeMcq && els.examTypeMcq.checked;
+    const useFib = els.examTypeFib && els.examTypeFib.checked;
+    const useTf = els.examTypeTf && els.examTypeTf.checked;
+    if (!useMcq && !useFib && !useTf) return 0;
+    let pool = buildBasePool("all", false);
+    if (!els.examTopicsAll || !els.examTopicsAll.checked)
+      pool = filterPoolByTopics(pool, topicIds);
+    pool = filterPoolByTypes(pool, useMcq, useFib, useTf);
+    return pool.length;
+  }
+
+  function getSelectedExamTopicIds() {
+    if (!els.examTopicBoxes || !els.examTopicsAll || els.examTopicsAll.checked) {
+      return null;
+    }
+    const ids = [];
+    els.examTopicBoxes.querySelectorAll('input[type="checkbox"]:checked').forEach(
+      (inp) => {
+        if (inp.dataset.topicId) ids.push(inp.dataset.topicId);
+      }
+    );
+    return ids;
+  }
+
+  function startExamFromForm() {
+    const useMcq = els.examTypeMcq.checked;
+    const useFib = els.examTypeFib.checked;
+    const useTf = els.examTypeTf.checked;
+    if (!useMcq && !useFib && !useTf) {
+      alert("En az bir soru türü seçin.");
+      return;
+    }
+    let pool = buildBasePool("all", false);
+    if (!els.examTopicsAll.checked) {
+      const tids = getSelectedExamTopicIds();
+      if (!tids || !tids.length) {
+        alert("Tüm konuları kapatıysanız en az bir konu işaretleyin.");
+        return;
+      }
+      pool = filterPoolByTopics(pool, tids);
+    }
+    pool = filterPoolByTypes(pool, useMcq, useFib, useTf);
+    if (!pool.length) {
+      alert("Seçiminize uygun soru yok.");
+      return;
+    }
+    let n = parseInt(els.examCount.value, 10);
+    if (Number.isNaN(n) || n < 1) n = 10;
+    if (els.examShuffle.checked) pool = shuffleArray(pool);
+    queue = pool.slice(0, Math.min(n, pool.length));
+
+    memory.clear();
+    countedResults.clear();
+    wrongKeySet.clear();
+    statsCorrect = 0;
+    statsWrong = 0;
+    reviewWrongMode = false;
+    queueSaved = null;
+    currentIndex = 0;
+    filter = "all";
+    topicFilter = "all";
+    if (els.topicSelect) els.topicSelect.value = "all";
+    document.querySelectorAll("[data-filter]").forEach((b) => {
+      b.classList.toggle("active", b.dataset.filter === "all");
+    });
+    updateScoreStrip();
+    syncWrongReviewButton();
+    if (els.examDetails) els.examDetails.open = false;
+    renderCurrent();
   }
 
   function topicLabel(slug) {
     if (!slug || !data.topics) return "";
     const t = data.topics.find((x) => x.id === slug);
     return t ? t.label : slug;
+  }
+
+  function updateScoreStrip() {
+    if (els.statCorrect) els.statCorrect.textContent = String(statsCorrect);
+    if (els.statWrong) els.statWrong.textContent = String(statsWrong);
+    if (els.statAnswered) els.statAnswered.textContent = String(countedResults.size);
+  }
+
+  function recordOutcome(item, ok) {
+    const key = getKey(item);
+    if (countedResults.has(key)) return;
+    countedResults.add(key);
+    if (ok) {
+      statsCorrect++;
+    } else {
+      statsWrong++;
+      wrongKeySet.add(key);
+    }
+    updateScoreStrip();
+    syncWrongReviewButton();
+  }
+
+  function syncWrongReviewButton() {
+    if (!els.btnWrongReview) return;
+    const n = wrongKeySet.size;
+    els.btnWrongReview.disabled = n === 0;
+    if (reviewWrongMode) {
+      els.btnWrongReview.textContent = "Tam listeye dön";
+    } else {
+      els.btnWrongReview.textContent =
+        n > 0 ? `Yanlışları gözden geçir (${n})` : "Yanlışları gözden geçir";
+    }
+  }
+
+  function toggleWrongReview() {
+    if (wrongKeySet.size === 0) return;
+    if (reviewWrongMode) {
+      queue = queueSaved || queue;
+      queueSaved = null;
+      reviewWrongMode = false;
+      currentIndex = 0;
+    } else {
+      queueSaved = queue.slice();
+      const wrongItems = queue.filter((it) => wrongKeySet.has(getKey(it)));
+      if (!wrongItems.length) {
+        alert("Yanlış işaretli soru bu listede yok.");
+        return;
+      }
+      queue = wrongItems;
+      reviewWrongMode = true;
+      currentIndex = 0;
+    }
+    syncWrongReviewButton();
+    renderCurrent();
   }
 
   function loadData() {
@@ -354,6 +537,7 @@
       memory.set(key, { revealed: true, mcqIndex: idx });
       applyMcqReveal(card, item.data);
       const ok = idx === item.data.correctIndex;
+      recordOutcome(item, ok);
       fillFeedbackPanel(feedbackEl, ok, item);
       btnCheck.disabled = true;
       btnNext.disabled = false;
@@ -371,6 +555,7 @@
       memory.set(key, { revealed: true, mcqIndex: idx });
       applyMcqReveal(card, m);
       const ok = idx === m.correctIndex;
+      recordOutcome(item, ok);
       fillFeedbackPanel(feedbackEl, ok, { type: "tf", data: item.data });
       btnCheck.disabled = true;
       btnNext.disabled = false;
@@ -390,9 +575,19 @@
     const allOk = inputs.every((inp, i) =>
       fibMatches(inp.value, item.data.answers[i] || "")
     );
+    recordOutcome(item, allOk);
     fillFeedbackPanel(feedbackEl, allOk, item);
     btnCheck.disabled = true;
     btnNext.disabled = false;
+  }
+
+  function renderReviewBanner(wrap) {
+    if (!reviewWrongMode) return;
+    const b = document.createElement("div");
+    b.className = "review-banner";
+    b.textContent =
+      "Yanlışlar modu: sadece yanlış bildiğiniz sorular listeleniyor. Önceki ile gezinip cevapları tekrar görebilirsiniz.";
+    wrap.insertBefore(b, wrap.firstChild);
   }
 
   function renderCurrent() {
@@ -400,7 +595,7 @@
 
     if (!queue.length) {
       els.main.innerHTML =
-        '<p class="empty-msg">Bu filtrede soru yok.</p>';
+        '<p class="empty-msg">Bu filtrede soru yok. Sınav oluştur veya filtreyi değiştir.</p>';
       els.progress.textContent = "—";
       return;
     }
@@ -416,6 +611,7 @@
 
     const wrap = document.createElement("div");
     wrap.className = "single-wrap";
+    renderReviewBanner(wrap);
 
     let card;
     if (item.type === "mcq") {
@@ -450,7 +646,7 @@
     btnNext.type = "button";
     btnNext.className = "btn-nav btn-next";
     const isLast = currentIndex >= queue.length - 1;
-    btnNext.textContent = isLast ? "Tamam" : "Sonraki soru →";
+    btnNext.textContent = isLast ? "Bitir / özet" : "Sonraki soru →";
 
     wrap.appendChild(card);
     wrap.appendChild(feedback);
@@ -509,9 +705,16 @@
       if (isLast) {
         feedback.classList.remove("hidden", "feedback-bad");
         feedback.classList.add("feedback-ok");
+        const w = statsWrong;
+        const c = statsCorrect;
+        const tot = countedResults.size;
         feedback.innerHTML =
-          '<p class="feedback-title">Bu sette son soruya ulaştınız.</p>' +
-          '<p class="feedback-note">Filtreyi değiştirebilir veya Sıfırla ile baştan başlayabilirsiniz.</p>';
+          '<p class="feedback-title">Set bitti</p>' +
+          `<p class="feedback-note">Doğru: <strong>${c}</strong> · Yanlış: <strong>${w}</strong> · Toplam yanıt: <strong>${tot}</strong></p>` +
+          (w > 0
+            ? '<p class="feedback-note">Yanlışları gözden geçirmek için üstteki düğmeyi kullanabilirsiniz.</p>'
+            : "") +
+          '<p class="feedback-note">Yeni sınav için üstteki paneli kullanın veya Sıfırla.</p>';
         btnNext.disabled = true;
         return;
       }
@@ -522,20 +725,24 @@
   }
 
   function applyFilter(btn) {
+    if (reviewWrongMode) return;
     document.querySelectorAll("[data-filter]").forEach((b) =>
       b.classList.remove("active")
     );
     btn.classList.add("active");
     filter = btn.dataset.filter;
     queue = buildQueue();
+    queueSaved = null;
     currentIndex = 0;
     renderCurrent();
   }
 
   function applyTopicFilter() {
+    if (reviewWrongMode) return;
     if (!els.topicSelect) return;
     topicFilter = els.topicSelect.value || "all";
     queue = buildQueue();
+    queueSaved = null;
     currentIndex = 0;
     renderCurrent();
   }
@@ -562,10 +769,50 @@
     }
   }
 
+  function fillExamTopicCheckboxes() {
+    if (!els.examTopicBoxes || !data.topics) return;
+    els.examTopicBoxes.innerHTML = "";
+    data.topics.forEach((t) => {
+      const lab = document.createElement("label");
+      lab.className = "exam-topic-label";
+      const inp = document.createElement("input");
+      inp.type = "checkbox";
+      inp.dataset.topicId = t.id;
+      inp.checked = true;
+      if (els.examTopicsAll && els.examTopicsAll.checked) inp.disabled = true;
+      lab.appendChild(inp);
+      lab.appendChild(document.createTextNode(" " + t.label));
+      els.examTopicBoxes.appendChild(lab);
+    });
+  }
+
+  function updateExamMaxHint() {
+    if (!els.examMaxHint || !els.examCount) return;
+    const m = countMaxPoolForExam();
+    els.examMaxHint.textContent = m ? `(en fazla ${m} soru)` : "";
+    const cur = parseInt(els.examCount.value, 10);
+    if (!Number.isNaN(cur) && m > 0 && cur > m) els.examCount.value = String(m);
+  }
+
   function resetAll() {
+    if (
+      !confirm(
+        "Tüm cevaplar, ilerleme ve skor sıfırlansın mı? (Sınav listesi de üst filtreye göre yenilenir.)"
+      )
+    ) {
+      return;
+    }
     memory.clear();
+    countedResults.clear();
+    wrongKeySet.clear();
+    statsCorrect = 0;
+    statsWrong = 0;
+    reviewWrongMode = false;
+    queueSaved = null;
     currentIndex = 0;
     queue = buildQueue();
+    updateScoreStrip();
+    syncWrongReviewButton();
     renderCurrent();
   }
 
@@ -576,20 +823,49 @@
     if (els.topicSelect) {
       els.topicSelect.addEventListener("change", () => applyTopicFilter());
     }
-    els.btnReset.addEventListener("click", () => {
-      if (confirm("Tüm cevaplar ve ilerleme sıfırlansın mı?")) resetAll();
+    els.btnReset.addEventListener("click", () => resetAll());
+    if (els.btnWrongReview) {
+      els.btnWrongReview.addEventListener("click", () => toggleWrongReview());
+    }
+    if (els.btnStartExam) {
+      els.btnStartExam.addEventListener("click", () => startExamFromForm());
+    }
+    if (els.examTopicsAll) {
+      els.examTopicsAll.addEventListener("change", () => {
+        const dis = els.examTopicsAll.checked;
+        if (els.examTopicBoxes) {
+          els.examTopicBoxes.querySelectorAll('input[type="checkbox"]').forEach(
+            (inp) => {
+              inp.disabled = dis;
+            }
+          );
+        }
+        updateExamMaxHint();
+      });
+    }
+    ["exam-type-mcq", "exam-type-fib", "exam-type-tf"].forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) el.addEventListener("change", updateExamMaxHint);
     });
+    if (els.examCount) els.examCount.addEventListener("input", updateExamMaxHint);
+    if (els.examTopicBoxes) {
+      els.examTopicBoxes.addEventListener("change", updateExamMaxHint);
+    }
   }
 
   function build() {
     els.title.textContent = data.title;
     els.subtitle.textContent =
       (data.subtitle || "") +
-      " — Tek tek soru; kontrol edince doğru/yanlış ve doğru cevap gösterilir.";
+      " — Cevap verince doğru/yanlış kaydedilir; skor üstte güncellenir.";
 
     queue = buildQueue();
     fillTopicOptions();
+    fillExamTopicCheckboxes();
+    updateExamMaxHint();
     initToolbar();
+    updateScoreStrip();
+    syncWrongReviewButton();
     renderCurrent();
   }
 

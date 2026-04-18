@@ -118,6 +118,141 @@ body {
   max-width: 100%;
 }
 
+.score-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  margin-top: 0.85rem;
+  padding: 0.55rem 0.75rem;
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  font-size: 0.92rem;
+}
+
+.score-item {
+  white-space: nowrap;
+}
+
+.score-ok strong {
+  color: #c6f6d5;
+}
+
+.score-bad strong {
+  color: #fed7d7;
+}
+
+.btn-wrong-review:not(:disabled) {
+  margin-left: auto;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.exam-details {
+  margin-top: 0.65rem;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.08);
+  padding: 0.35rem 0.75rem;
+}
+
+.exam-summary {
+  cursor: pointer;
+  font-weight: 600;
+  outline: none;
+}
+
+.exam-details[open] .exam-summary {
+  margin-bottom: 0.6rem;
+}
+
+.exam-hint {
+  margin: 0 0 0.75rem;
+  font-size: 0.88rem;
+  opacity: 0.92;
+}
+
+.exam-fieldset {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  padding: 0.6rem 0.85rem;
+  margin: 0 0 0.75rem;
+}
+
+.exam-fieldset legend {
+  padding: 0 0.35rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.topic-checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+  max-height: 8rem;
+  overflow-y: auto;
+}
+
+.exam-topic-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  cursor: pointer;
+}
+
+.exam-inline {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  cursor: pointer;
+  margin-top: 0.25rem;
+}
+
+.exam-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.exam-row input[type="number"] {
+  width: 5rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.95);
+  color: #1a202c;
+}
+
+.exam-max {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.exam-actions {
+  margin-top: 0.75rem;
+}
+
+.review-banner {
+  padding: 0.65rem 0.85rem;
+  margin-bottom: 0.85rem;
+  border-radius: var(--radius);
+  background: rgba(254, 215, 215, 0.35);
+  border: 1px solid rgba(197, 48, 48, 0.35);
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+@media (max-width: 520px) {
+  .btn-wrong-review:not(:disabled) {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
 .filter-group {
   display: flex;
   flex-wrap: wrap;

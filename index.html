@@ -26,12 +26,46 @@
       <span class="progress-badge" id="progress">—</span>
       <button type="button" class="btn-ghost" id="btn-reset">Sıfırla</button>
     </div>
+    <div class="score-strip" id="score-strip" aria-live="polite">
+      <span class="score-item score-ok">Doğru: <strong id="stat-correct">0</strong></span>
+      <span class="score-item score-bad">Yanlış: <strong id="stat-wrong">0</strong></span>
+      <span class="score-item">Yanıtlanan: <strong id="stat-answered">0</strong></span>
+      <button type="button" class="btn-ghost btn-wrong-review" id="btn-wrong-review" disabled>
+        Yanlışları gözden geçir
+      </button>
+    </div>
+    <details class="exam-details" id="exam-details">
+      <summary class="exam-summary">Sınav oluştur (konu, tür, soru sayısı)</summary>
+      <div class="exam-form" id="exam-form">
+        <p class="exam-hint">Aşağıdan konu ve soru türlerini seçin; havuzdan karıştırılarak belirttiğiniz sayıda soru gelir.</p>
+        <fieldset class="exam-fieldset">
+          <legend>Konular</legend>
+          <div class="topic-checkboxes" id="exam-topic-boxes"></div>
+          <label class="exam-inline"><input type="checkbox" id="exam-topics-all" checked /> Tüm konular</label>
+        </fieldset>
+        <fieldset class="exam-fieldset">
+          <legend>Soru türleri</legend>
+          <label><input type="checkbox" id="exam-type-mcq" checked /> Çoktan seçmeli</label>
+          <label><input type="checkbox" id="exam-type-fib" checked /> Boşluk doldurma</label>
+          <label><input type="checkbox" id="exam-type-tf" checked /> Doğru / Yanlış</label>
+        </fieldset>
+        <div class="exam-row">
+          <label for="exam-count">Soru sayısı</label>
+          <input type="number" id="exam-count" min="1" value="20" />
+          <span class="exam-max" id="exam-max-hint"></span>
+        </div>
+        <label class="exam-inline"><input type="checkbox" id="exam-shuffle" checked /> Karıştır</label>
+        <div class="exam-actions">
+          <button type="button" class="btn-primary" id="btn-start-exam">Sınava başla</button>
+        </div>
+      </div>
+    </details>
   </header>
 
   <main id="quiz-main" class="quiz-main-single"></main>
 
   <footer>
-    BLM0462 Örüntü Tanıma — tek soru modu
+    BLM0462 Örüntü Tanıma — skor, sınav oluşturma ve yanlış gözden geçirme
   </footer>
 
   <script src="questions-data.js"></script>
