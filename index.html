@@ -15,6 +15,13 @@
         <button type="button" data-filter="all" class="active">Tümü</button>
         <button type="button" data-filter="mcq">Çoktan seçmeli</button>
         <button type="button" data-filter="fib">Boşluk doldurma</button>
+        <button type="button" data-filter="tf">Doğru / Yanlış</button>
+      </div>
+      <div class="topic-wrap">
+        <label for="topic-filter" class="topic-label">Konu</label>
+        <select id="topic-filter" class="topic-select" aria-label="Ders konusu filtresi">
+          <option value="all">Tüm konular</option>
+        </select>
       </div>
       <span class="progress-badge" id="progress">—</span>
       <button type="button" class="btn-ghost" id="btn-reset">Sıfırla</button>

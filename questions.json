@@ -1,6 +1,6 @@
 {
   "title": "BLM0462 Örüntü Tanıma — Vize Soru Bankası",
-  "subtitle": "Çoktan seçmeli ve boşluk doldurma — cevapları kontrol edin",
+  "subtitle": "Çoktan seçmeli, boşluk doldurma ve doğru/yanlış — cevapları kontrol edin",
   "mcq": [
     {
       "id": 1,
@@ -13,7 +13,8 @@
         "Programlama dili tasarlamak"
       ],
       "correctIndex": 0,
-      "explanation": "Örüntü tanıma ham veriyi karara dönüştürme sürecidir."
+      "explanation": "Örüntü tanıma ham veriyi karara dönüştürme sürecidir.",
+      "topic": "giris"
     },
     {
       "id": 2,
@@ -26,7 +27,8 @@
         "Sınıflandırma → Algılama → Özellik çıkarımı"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 3,
@@ -39,7 +41,8 @@
         "Uzunluk sadece görüntüden ölçülemez"
       ],
       "correctIndex": 2,
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 4,
@@ -52,7 +55,8 @@
         "Karar sınırının konumunu hiçbir şekilde etkilemez"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 5,
@@ -65,7 +69,8 @@
         "Modelin yetersiz eğitilmesi"
       ],
       "correctIndex": 0,
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 6,
@@ -78,7 +83,8 @@
         "Test verisini eğitime dâhil etmek"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 7,
@@ -91,7 +97,8 @@
         "Sensörün markasına göre"
       ],
       "correctIndex": 0,
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 8,
@@ -104,7 +111,8 @@
         "Parametreleri sabittir, öğrenme yoktur"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 9,
@@ -117,7 +125,8 @@
         "Regresyon fonksiyonu oturtmak"
       ],
       "correctIndex": 2,
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 10,
@@ -130,7 +139,8 @@
         "Tüm parametreler baştan sabittir"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 11,
@@ -143,7 +153,8 @@
         "Gürültü tamamen sıfır olmalıdır"
       ],
       "correctIndex": 0,
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 12,
@@ -156,7 +167,8 @@
         "Bağlam karar sınırını hareketsiz tutar"
       ],
       "correctIndex": 2,
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 13,
@@ -169,7 +181,8 @@
         "Bölütleme maliyeti sıfırdır"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 14,
@@ -182,7 +195,8 @@
         "Eksik özellik sınıflandırma performansını etkileyebilir"
       ],
       "correctIndex": 1,
-      "explanation": "Ortalamaya göre doldurma bir çözüm olsa da optimal değildir."
+      "explanation": "Ortalamaya göre doldurma bir çözüm olsa da optimal değildir.",
+      "topic": "giris"
     },
     {
       "id": 15,
@@ -195,7 +209,8 @@
         "Tanıma ve sınıflandırma her zaman özdeştir"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 16,
@@ -208,7 +223,8 @@
         "DNA dizi tanıma"
       ],
       "correctIndex": 3,
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 17,
@@ -221,7 +237,8 @@
         "Eşik rastgele belirlenir"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 18,
@@ -234,7 +251,8 @@
         "Yalnızca etiketsiz verilerde geçerlidir"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 19,
@@ -247,7 +265,8 @@
         "Doğal dilde metin üretmek"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 20,
@@ -260,7 +279,8 @@
         "Pekiştirmeli öğrenme — ödül sinyali tabanlı"
       ],
       "correctIndex": 3,
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 21,
@@ -273,7 +293,8 @@
         "Olasılıklar (önsel, olabilirlik) birleştirilerek karar verilir"
       ],
       "correctIndex": 3,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 22,
@@ -286,7 +307,8 @@
         "λ(α|ω) — kayıp fonksiyonu"
       ],
       "correctIndex": 2,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 23,
@@ -299,7 +321,8 @@
         "Her zaman Gauss olduğu varsayılır"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 24,
@@ -312,7 +335,8 @@
         "λ değeri negatifse"
       ],
       "correctIndex": 2,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 25,
@@ -325,7 +349,8 @@
         "Rastgele seçim yapar"
       ],
       "correctIndex": 2,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 26,
@@ -338,7 +363,8 @@
         "Özellik uzayının hacmi"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 27,
@@ -351,7 +377,8 @@
         "Entropiye"
       ],
       "correctIndex": 0,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 28,
@@ -364,7 +391,8 @@
         "Gauss olmayan dağılımlarda"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 29,
@@ -377,7 +405,8 @@
         "Boyutluluk lanetini çözmek"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 30,
@@ -390,7 +419,8 @@
         "Hiçbir kısıt olmadığında"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 31,
@@ -403,7 +433,8 @@
         "Kayıp miktarına bağlı değildir"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 32,
@@ -416,7 +447,8 @@
         "gi(x) negatifse ωj seç"
       ],
       "correctIndex": 2,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 33,
@@ -429,7 +461,8 @@
         "Özellik sayısı 1’den büyükse"
       ],
       "correctIndex": 2,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 34,
@@ -442,7 +475,8 @@
         "Parametrik olmayan özel bir yoğunluk tahmini"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 35,
@@ -455,7 +489,8 @@
         "Dağılımın cinsine bağlı değildir"
       ],
       "correctIndex": 2,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 36,
@@ -468,7 +503,8 @@
         "Özellik uzayının hacmini"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 37,
@@ -481,7 +517,8 @@
         "Belleği az kullanır"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 38,
@@ -494,7 +531,8 @@
         "Minimax maliyetleri görmezden gelir"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 39,
@@ -507,7 +545,8 @@
         "Kayıp hiç dikkate alınmaz"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 40,
@@ -520,7 +559,8 @@
         "Kayıp matrisi tanımsızsa karar vermez"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 41,
@@ -533,7 +573,8 @@
         "Parametreler sabittir, tahmin edilmez"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 42,
@@ -546,7 +587,8 @@
         "Hataları karesini almamak"
       ],
       "correctIndex": 0,
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 43,
@@ -559,7 +601,8 @@
         "Hesaplamayı hızlandırmak"
       ],
       "correctIndex": 3,
-      "explanation": "Logaritma monoton arttığından maksimumun yeri değişmez."
+      "explanation": "Logaritma monoton arttığından maksimumun yeri değişmez.",
+      "topic": "parametrik"
     },
     {
       "id": 44,
@@ -572,7 +615,8 @@
         "Örneklerin minimumu"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 45,
@@ -585,7 +629,8 @@
         "Ortalamanın karesi"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 46,
@@ -598,7 +643,8 @@
         "Özelliklerin medyanı"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 47,
@@ -611,7 +657,8 @@
         "Asla güncellenmez"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 48,
@@ -624,7 +671,8 @@
         "MLE hiçbir varsayım yapmaz"
       ],
       "correctIndex": 2,
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 49,
@@ -637,7 +685,8 @@
         "Önsel ortalaması değişmiştir"
       ],
       "correctIndex": 2,
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 50,
@@ -650,7 +699,8 @@
         "Dar önsel her zaman daha iyidir"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 51,
@@ -663,7 +713,8 @@
         "Önsel varyans büyür"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 52,
@@ -676,7 +727,8 @@
         "Yalnızca yoğun verilerde görülmesi"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 53,
@@ -689,7 +741,8 @@
         "Daha fazla veri eklemek daima durumu kötüleştirir"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 54,
@@ -702,7 +755,8 @@
         "Dağılım düzgün dağılımsa"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 55,
@@ -715,7 +769,8 @@
         "E: veri topla; M: veri sil"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 56,
@@ -728,7 +783,8 @@
         "Tek bir adımda biter"
       ],
       "correctIndex": 0,
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 57,
@@ -741,7 +797,8 @@
         "Veri tamamen etiketliyse asla gerekmez"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 58,
@@ -754,7 +811,8 @@
         "k. bileşenin entropisi"
       ],
       "correctIndex": 2,
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 59,
@@ -767,7 +825,8 @@
         "Modeli karmaşıklaştırmak"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 60,
@@ -780,7 +839,8 @@
         "p(θ|D) = p(D)·p(θ)"
       ],
       "correctIndex": 2,
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 61,
@@ -793,7 +853,8 @@
         "Yalnızca etiketli veri kullanmak"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 62,
@@ -806,7 +867,8 @@
         "Parametrik yöntemler etiket gerektirmediği için"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 63,
@@ -819,7 +881,8 @@
         "Kestirim yerel veri yoğunluğunu bölge büyüklüğüne bölerek verir"
       ],
       "correctIndex": 3,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 64,
@@ -832,7 +895,8 @@
         "Kutu genişliği negatif seçilmelidir"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 65,
@@ -845,7 +909,8 @@
         "k-NN’de yoğunluk tanımsızdır"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 66,
@@ -858,7 +923,8 @@
         "2h"
       ],
       "correctIndex": 2,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 67,
@@ -871,7 +937,8 @@
         "Yalnızca tam sayılar"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 68,
@@ -884,7 +951,8 @@
         "Etiketleri silmek"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 69,
@@ -897,7 +965,8 @@
         "Etiket gerektirir"
       ],
       "correctIndex": 2,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 70,
@@ -910,7 +979,8 @@
         "KDE bir parametrik yöntemdir"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 71,
@@ -923,7 +993,8 @@
         "Gürültü ve sensör arızası"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 72,
@@ -936,7 +1007,8 @@
         "h büyüdükçe kestirim daima iyileşir"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 73,
@@ -949,7 +1021,8 @@
         "Vn’nin yok olması gerekmez"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 74,
@@ -962,7 +1035,8 @@
         "Bölge küçükse ortalama hata sıfırdır"
       ],
       "correctIndex": 0,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 75,
@@ -975,7 +1049,8 @@
         "Parzen yalnızca tek boyutta kullanılır"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 76,
@@ -988,7 +1063,8 @@
         "Özellik sayısı d"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 77,
@@ -1001,7 +1077,8 @@
         "Tek boyutta çalışır"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 78,
@@ -1014,7 +1091,8 @@
         "Gauss dağılımı varsayar"
       ],
       "correctIndex": 0,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 79,
@@ -1027,7 +1105,8 @@
         "Tüm veri noktalarının sınıf ortalaması alınır"
       ],
       "correctIndex": 2,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 80,
@@ -1040,7 +1119,8 @@
         "Sadece 3 boyutta tanımlıdır"
       ],
       "correctIndex": 0,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 81,
@@ -1053,7 +1133,8 @@
         "k, veri sayısına eşit seçilmelidir"
       ],
       "correctIndex": 2,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 82,
@@ -1066,7 +1147,8 @@
         "O(d!)"
       ],
       "correctIndex": 2,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 83,
@@ -1079,7 +1161,8 @@
         "Veriyi rastgele etiketlemek için"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 84,
@@ -1092,7 +1175,8 @@
         "Büyük k daima daha iyidir"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 85,
@@ -1105,7 +1189,8 @@
         "Üçgen eşitsizliğini sağlamaması"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 86,
@@ -1118,7 +1203,8 @@
         "Etiketleri silmek için"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 87,
@@ -1131,7 +1217,8 @@
         "Verinin modunu kaldırmak için"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 88,
@@ -1144,7 +1231,8 @@
         "Sınıflandırma daima doğru olur"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 89,
@@ -1157,7 +1245,8 @@
         "Aynı sınıfa sahip tüm noktalar"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 90,
@@ -1170,7 +1259,8 @@
         "Bant genişliğine"
       ],
       "correctIndex": 0,
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 91,
@@ -1183,7 +1273,8 @@
         "Kural tabanlı bir uzman sistemdir"
       ],
       "correctIndex": 0,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bbn"
     },
     {
       "id": 92,
@@ -1196,7 +1287,8 @@
         "Düğümler etiketler, kenarlar zaman aralıklarıdır"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bbn"
     },
     {
       "id": 93,
@@ -1209,7 +1301,8 @@
         "Tüm düğümlerin bağımsız olması"
       ],
       "correctIndex": 0,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bbn"
     },
     {
       "id": 94,
@@ -1222,7 +1315,8 @@
         "Naive Bayes etiket gerektirmez"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bbn"
     },
     {
       "id": 95,
@@ -1235,7 +1329,8 @@
         "Yalnızca kardeş düğümlere"
       ],
       "correctIndex": 2,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bbn"
     },
     {
       "id": 96,
@@ -1248,7 +1343,8 @@
         "P(X1,...,Xn) = 1 / n"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bbn"
     },
     {
       "id": 97,
@@ -1261,7 +1357,8 @@
         "Regresyon katsayılarını"
       ],
       "correctIndex": 0,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bbn"
     },
     {
       "id": 98,
@@ -1274,7 +1371,8 @@
         "P(X|Y) = 1"
       ],
       "correctIndex": 2,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bbn"
     },
     {
       "id": 99,
@@ -1287,7 +1385,8 @@
         "Yalnızca özellik seçimi"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bbn"
     },
     {
       "id": 100,
@@ -1300,7 +1399,8 @@
         "Ebeveyn düğümlerin silindiğini"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bbn"
     },
     {
       "id": 101,
@@ -1313,7 +1413,8 @@
         "Değişken sayısı arttıkça hesaplama karmaşıklığı düşer"
       ],
       "correctIndex": 4,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bbn"
     },
     {
       "id": 102,
@@ -1326,7 +1427,8 @@
         "Değişkenler arası ilişkileri modelleyememe"
       ],
       "correctIndex": 4,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bbn"
     },
     {
       "id": 103,
@@ -1339,7 +1441,8 @@
         "Lineer cebirde determinant hesaplama"
       ],
       "correctIndex": 4,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bbn"
     },
     {
       "id": 104,
@@ -1352,7 +1455,8 @@
         "k-ortalamalar"
       ],
       "correctIndex": 0,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bbn"
     },
     {
       "id": 105,
@@ -1365,7 +1469,8 @@
         "İşletim sistemi çizelgelemesi"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "bbn"
     },
     {
       "id": 106,
@@ -1378,7 +1483,8 @@
         "Hybrid + Mixture"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 107,
@@ -1391,7 +1497,8 @@
         "Geçmiş ve gelecek her zaman eşittir"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 108,
@@ -1404,7 +1511,8 @@
         "Markov Zinciri emisyon olasılıkları kullanır"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 109,
@@ -1417,7 +1525,8 @@
         "Gözlem dizisinin uzunluğu"
       ],
       "correctIndex": 3,
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 110,
@@ -1430,7 +1539,8 @@
         "Yalnızca geçiş matrisine bağlıdır"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 111,
@@ -1443,7 +1553,8 @@
         "Gözlem sayısı kadar"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 112,
@@ -1456,7 +1567,8 @@
         "Başlangıç olasılıklarını — toplam 0"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 113,
@@ -1469,7 +1581,8 @@
         "Özellik seçimi, veri temizleme, raporlama"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 114,
@@ -1482,7 +1595,8 @@
         "Bellek yönetimi"
       ],
       "correctIndex": 2,
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 115,
@@ -1495,7 +1609,8 @@
         "Normalizasyon; z-score uygular"
       ],
       "correctIndex": 2,
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 116,
@@ -1508,7 +1623,8 @@
         "Sınıflandırma"
       ],
       "correctIndex": 2,
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 117,
@@ -1521,7 +1637,8 @@
         "Principal Component Analysis"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 118,
@@ -1534,7 +1651,8 @@
         "Emisyon olasılıklarını sıfırlamak için"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 119,
@@ -1547,7 +1665,8 @@
         "Statik görüntü renk histogramı çıkarma"
       ],
       "correctIndex": 4,
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 120,
@@ -1560,7 +1679,8 @@
         "Başlangıç değerlerine duyarlıdır"
       ],
       "correctIndex": 3,
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 121,
@@ -1573,7 +1693,8 @@
         "Geçiş matrisinin determinantı"
       ],
       "correctIndex": 0,
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 122,
@@ -1586,7 +1707,8 @@
         "Gözlem sayısını"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 123,
@@ -1599,7 +1721,8 @@
         "Veriyi silmek"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 124,
@@ -1612,7 +1735,8 @@
         "Yalnızca entropiyi"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 125,
@@ -1625,7 +1749,8 @@
         "Uzun vadeli bağımlılıkları Transformer’lardan daha iyi yakalar"
       ],
       "correctIndex": 4,
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 126,
@@ -1638,7 +1763,8 @@
         "GMM — EM ile karışım parametre öğrenme"
       ],
       "correctIndex": 2,
-      "explanation": ""
+      "explanation": "",
+      "topic": "tekrar"
     },
     {
       "id": 127,
@@ -1651,7 +1777,8 @@
         "HMM Evaluation — EM"
       ],
       "correctIndex": 3,
-      "explanation": ""
+      "explanation": "",
+      "topic": "tekrar"
     },
     {
       "id": 128,
@@ -1664,7 +1791,8 @@
         "MLE ile Gauss parametre tahmini"
       ],
       "correctIndex": 4,
-      "explanation": ""
+      "explanation": "",
+      "topic": "tekrar"
     },
     {
       "id": 129,
@@ -1677,7 +1805,8 @@
         "Her zaman derin öğrenme"
       ],
       "correctIndex": 1,
-      "explanation": ""
+      "explanation": "",
+      "topic": "tekrar"
     },
     {
       "id": 130,
@@ -1690,7 +1819,8 @@
         "Küçük h daima düşük yanlılık ve düşük varyans verir"
       ],
       "correctIndex": 0,
-      "explanation": ""
+      "explanation": "",
+      "topic": "tekrar"
     },
     {
       "id": 131,
@@ -1703,7 +1833,8 @@
         "Bias-variance dengesine dikkat etme"
       ],
       "correctIndex": 3,
-      "explanation": "Test verisine bakarak hiperparametre seçmek veri sızıntısıdır."
+      "explanation": "Test verisine bakarak hiperparametre seçmek veri sızıntısıdır.",
+      "topic": "tekrar"
     },
     {
       "id": 132,
@@ -1716,7 +1847,8 @@
         "HMM yalnızca iki durumla kullanılır"
       ],
       "correctIndex": 0,
-      "explanation": ""
+      "explanation": "",
+      "topic": "tekrar"
     },
     {
       "id": 133,
@@ -1729,7 +1861,8 @@
         "İkisi de tamamen aynıdır"
       ],
       "correctIndex": 0,
-      "explanation": ""
+      "explanation": "",
+      "topic": "tekrar"
     },
     {
       "id": 134,
@@ -1742,7 +1875,8 @@
         "GMM bir sınıflandırma algoritmasıdır, yoğunlukla ilgisi yoktur"
       ],
       "correctIndex": 0,
-      "explanation": ""
+      "explanation": "",
+      "topic": "tekrar"
     },
     {
       "id": 135,
@@ -1755,7 +1889,1394 @@
         "Histogram eşik"
       ],
       "correctIndex": 2,
+      "explanation": "",
+      "topic": "tekrar"
+    },
+    {
+      "id": 136,
+      "topic": "pca",
+      "question": "PCA ve özdeğer–özvektör seçimi hakkında aşağıdaki ifadelerden hangisi <b>yanlıştır</b>?",
+      "options": [
+        "PCA uygulanmadan önce veriden örneklem ortalaması çıkarılarak veri merkeze alınır",
+        "En büyük varyans yönü, scatter matrisinin en büyük özdeğerine karşılık gelen özvektör ile belirlenir",
+        "Küçük özdeğerlere karşılık gelen özvektörler genellikle en önemli (birincil) bileşenlerdir",
+        "PCA yeni ortogonal bir baz oluşturur; özvektörler birbirine dik olabilir",
+        "PCA doğrusal bir temsil (representation) yöntemidir ve sınıf ayrımını doğrudan optimize etmeyebilir"
+      ],
+      "correctIndex": 2,
+      "explanation": "En önemli bileşenler büyük özdeğerlere karşılık gelen özvektörlerdir."
+    },
+    {
+      "id": 137,
+      "topic": "pca",
+      "question": "Parzen pencereleri ve bant genişliği <i>h</i> hakkında aşağıdakilerden hangisi <b>yanlıştır</b>?",
+      "options": [
+        "Küçük h genellikle dalgalı, yüksek varyanslı kestirim verir",
+        "Büyük h genellikle aşırı düzleşmiş, yüksek yanlılıklı kestirim verir",
+        "Büyük h seçildiğinde kestirim çok dalgalı ve gürültülü olur; küçük h ise daha çok düzleştirir",
+        "Bant genişliği (bandwidth) KDE/Parzen’de kritik bir hiperparametredir",
+        "Çekirdek yoğunluk kestiriminde çekirdeğin integrali 1 olmalıdır (uygun normalizasyonla)"
+      ],
+      "correctIndex": 2,
+      "explanation": "Büyük h aşırı düzleşme (underfitting), küçük h dalgalılık (overfitting) eğilimi gösterir."
+    },
+    {
+      "id": 138,
+      "topic": "pca",
+      "question": "Boyutun laneti ve yüksek boyutlu özellik uzayları hakkında aşağıdakilerden hangisi <b>yanlıştır</b>?",
+      "options": [
+        "Özellik sayısı arttıkça aynı yerel yoğunluğu korumak için gereken örnek sayısı genellikle çok hızlı artar",
+        "20×20 piksellik gri bir yüz görüntüsü, her pikseli ayrı özellik sayılırsa 400 boyutlu bir özellik vektörü tanımlar",
+        "Boyutun laneti yalnızca hesaplama süresini etkiler; genelleme ve örnek karmaşıklığıyla ilgisi yoktur",
+        "Sabit örnek sayısıyla özellik sayısı arttıkça sınıflandırma hatası önce azalıp sonra artabilir",
+        "n < d² iken tam kovaryans yerine daha az parametreli (ör. diyagonal) yapı bazen daha iyi sonuç verir"
+      ],
+      "correctIndex": 2,
+      "explanation": "Boyutun laneti hem veri ihtiyacını hem model/kestirim güvenilirliğini etkiler."
+    },
+    {
+      "id": 139,
+      "topic": "pca",
+      "question": "Parzen yoğunluk kestirimi ve histogram karşılaştırması için hangi ifade <b>doğrudur</b>?",
+      "options": [
+        "Histogramda bölgeler (kutular) sabit bir uzay bölmesi oluşturur; Parzen’de pencere sorgu noktası x etrafında kayarak kurulur",
+        "Her iki yöntemde de her x noktası için pencere boyutu veri yoğunluğuna göre otomatik değişir",
+        "Histogram ile Parzen’in hiperparametre seçimi (kutu genişliği / h) başarıyı hiç etkilemez",
+        "Parzen doğrudan sonsal olasılık P(ω|x) verir; olabilirlik kestirimi yapmaz",
+        "Kutu (box) çekirdeği mesafeye göre ağırlık verdiği için Gauss çekirdeği ile aynı geometrik özelliklere sahiptir"
+      ],
+      "correctIndex": 0,
       "explanation": ""
+    },
+    {
+      "id": 140,
+      "topic": "pca",
+      "question": "k-NN yoğunluk kestirimi ve Parzen ile ilgili aşağıdakilerden hangisi <b>yanlıştır</b>?",
+      "options": [
+        "k-NN’de k sabit tutulurken bölge hacmi V veriye göre değişir",
+        "Parzen’de tipik olarak bölge hacmi/bant genişliği sabitlenir; içerdeki örnek sayısı k konuma göre değişir",
+        "Yoğun bölgelerde k-NN daha küçük V, seyrek bölgelerde daha büyük V gerektirir",
+        "k-NN ile elde edilen doğrudan yoğunluk kestirimi her zaman geçerli bir olasılık yoğunluğu (tüm özelliklerde düzgün) verir",
+        "k-NN sınıflandırıcı çoğunluk oylaması kullanır"
+      ],
+      "correctIndex": 3,
+      "explanation": "Doğrudan k-NN tabanlı kestirim süreksizlikler içerebilir ve klasik anlamda düzgün bir yoğunluk vermeyebilir."
+    },
+    {
+      "id": 141,
+      "topic": "pca",
+      "question": "PCA matematiksel olarak temel bileşenlere indirgeme adımında aşağıdakilerden hangisi tipik sırayı doğru verir?",
+      "options": [
+        "Önce boyut indirgeme, sonra merkeze alma, sonra scatter matrisi",
+        "Merkeze alma → scatter (kovaryans) matrisi → özdeğer ayrışımı → en büyük özdeğerlere karşılık gelen özvektörlerle projeksiyon",
+        "Önce sınıf etiketlerine göre LDA, sonra PCA",
+        "Sadece özdeğerleri küçükten büyüğe sıralayıp ilk bileşenleri alma",
+        "Önce veriyi normalize etmeden doğrudan özdeğer hesabı"
+      ],
+      "correctIndex": 1,
+      "explanation": "Merkeze alınmış veride scatter/Σ ile özvektörler; projeksiyon y = E^T z."
+    },
+    {
+      "id": 142,
+      "topic": "pca",
+      "question": "Boyut indirgeme ve lineer dönüşüm için hangi ifade <b>en uygun</b>dur?",
+      "options": [
+        "PCA dışında yalnızca doğrusal olmayan hiçbir yöntemle boyut indirgeme yapılamaz",
+        "PCA eksenleri seçerek maksimum varyans yönlerini bulur; lineer bir projeksiyon matrisi W (veya E) ile y = W^T z yazılabilir",
+        "Parzen yoğunluğu daima tek modlu Gauss ile özdeştir",
+        "Boyut indirgemede k-NN her zaman PCA’dan daha düşük Bayes hatası verir",
+        "Scatter matrisi hesaplanırken verinin ortalaması sıfır olmak zorunda değildir"
+      ],
+      "correctIndex": 1,
+      "explanation": ""
+    },
+    {
+      "id": 143,
+      "topic": "pca",
+      "question": "MLE ile Parzen/histogramda bir bölgede k örnek ve n toplam için bölge olasılığının basit tahmini aşağıdakilerden hangisidir?",
+      "options": [
+        "k·n",
+        "k/n",
+        "n/k",
+        "1/(kV)",
+        "log k − log n"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bölge olasılığı için doğrudan oransal tahmin k/n."
+    },
+    {
+      "id": 144,
+      "topic": "pca",
+      "question": "Parzen yakınsaması için tipik olarak verilen koşul çifti (bölge hacmi Vₙ ve nVₙ) aşağıdakilerden hangisidir?",
+      "options": [
+        "Vₙ → ∞ ve nVₙ → 0",
+        "Vₙ → 0 ve nVₙ → 0",
+        "Vₙ → 0 ve nVₙ → ∞",
+        "Vₙ sabit ve n → 0",
+        "Vₙ = 1/n ve n sabit"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bölge küçülürken içinde yeterince örnek kalmalı."
+    },
+    {
+      "id": 145,
+      "topic": "pca",
+      "question": "Histogram yaklaşımında kutu (bin) içi modelleme ile ilgili hangi ifade <b>doğrudur</b>?",
+      "options": [
+        "Her kutuda yoğunluk genellikle sabit kabul edilir (seçilen bölümlemede)",
+        "Kutu genişliği sonucu hiç etkilemez",
+        "Histogram penceresi her sorgu noktasında kayar; Parzen’de kutular sabittir",
+        "Histogram her zaman KDE’den daha pürüzsüz yoğunluk verir",
+        "Kutular birbirini örtüşmek zorundadır"
+      ],
+      "correctIndex": 0,
+      "explanation": ""
+    },
+    {
+      "id": 146,
+      "topic": "havuz",
+      "question": "Örüntü tanımanın temel amacı aşağıdakilerden hangisidir?",
+      "options": [
+        "Ham veriyi anlamlı bir sınıf kararına dönüştürmek",
+        "Veri miktarını artırmak",
+        "Algoritmayı yalnızca hızlandırmak",
+        "Tüm hataları sıfıra indirmek"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_1"
+    },
+    {
+      "id": 147,
+      "topic": "havuz",
+      "question": "Aşağıdakilerden hangisi örüntü tanımanın gerçek hayat uygulamalarından biri değildir?",
+      "options": [
+        "Yüz tanıma",
+        "Spam filtreleme",
+        "Tıbbi teşhis",
+        "Transistör üretim hattı gerilim regülasyonu"
+      ],
+      "correctIndex": 3,
+      "explanation": "",
+      "source": "havuz_mc_2"
+    },
+    {
+      "id": 148,
+      "topic": "havuz",
+      "question": "Balık örneğinde algılayıcı olarak kullanılan bileşen nedir?",
+      "options": [
+        "Mikrofon",
+        "Kamera",
+        "Basınç sensörü",
+        "GPS"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_3"
+    },
+    {
+      "id": 149,
+      "topic": "havuz",
+      "question": "Balık sınıflandırma boru hattısında özellik çıkarımından sonra gelen adım hangisidir?",
+      "options": [
+        "Veri toplama",
+        "Sınıflandırma",
+        "Ön işleme",
+        "Etiketleme"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_4"
+    },
+    {
+      "id": 150,
+      "topic": "havuz",
+      "question": "Aşağıdakilerden hangisi gürültü kaynağı olarak slaytlarda sayılmıştır?",
+      "options": [
+        "Işıklandırma değişimi",
+        "Sadece dosya boyutu",
+        "Yalnızca internet gecikmesi",
+        "Öznitelik seçimi"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_5"
+    },
+    {
+      "id": 151,
+      "topic": "havuz",
+      "question": "Tek özellik olarak uzunluk kullanıldığında temel sorun nedir?",
+      "options": [
+        "Özelliğin ölçülememesi",
+        "Sınıfların tamamen ayrık olması",
+        "Dağılımların çakışması",
+        "Kameranın renkli olması"
+      ],
+      "correctIndex": 2,
+      "explanation": "",
+      "source": "havuz_mc_6"
+    },
+    {
+      "id": 152,
+      "topic": "havuz",
+      "question": "Parlaklık özelliği neden tek başına doğrudan kullanılmamalıdır?",
+      "options": [
+        "Ölçülmesi imkânsızdır",
+        "Aydınlatma etkisi ön işlemeyle azaltılmalıdır",
+        "Yalnızca iki sınıfta çalışır",
+        "Her zaman uzunluktan kötüdür"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_7"
+    },
+    {
+      "id": 153,
+      "topic": "havuz",
+      "question": "Karar sınırının yeri yalnızca doğrulukla değil, aşağıdakilerden hangisiyle de ilişkilidir?",
+      "options": [
+        "Dosya biçimiyle",
+        "Hata maliyeti ve riskle",
+        "Ekran çözünürlüğüyle",
+        "Örnek numarasıyla"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_8"
+    },
+    {
+      "id": 154,
+      "topic": "havuz",
+      "question": "Aşırı öğrenmenin temel belirtisi aşağıdakilerden hangisidir?",
+      "options": [
+        "Eğitim ve test hatasının ikisinin de çok yüksek olması",
+        "Eğitim hatasının düşük, test hatasının yüksek olması",
+        "Test hatasının sıfır olması",
+        "Veri boyutunun küçük olması"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_9"
+    },
+    {
+      "id": 155,
+      "topic": "havuz",
+      "question": "Basitlik–başarı dengesi açısından amaç nedir?",
+      "options": [
+        "En karmaşık modeli seçmek",
+        "Eğitim verisini ezberlemek",
+        "Model basitliği ile performans arasında uygun dengeyi kurmak",
+        "Özellik sayısını sonsuza çıkarmak Bayesian Karar Teorisi"
+      ],
+      "correctIndex": 2,
+      "explanation": "",
+      "source": "havuz_mc_10"
+    },
+    {
+      "id": 156,
+      "topic": "havuz",
+      "question": "Bayesian karar teorisi hangi iki unsuru birleştirerek karar verir?",
+      "options": [
+        "Yalnızca hız ve bellek",
+        "Maliyetler ve olasılıklar",
+        "Boyut ve çözünürlük",
+        "Renk ve parlaklık"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_11"
+    },
+    {
+      "id": 157,
+      "topic": "havuz",
+      "question": "P(ωj) terimi neyi ifade eder?",
+      "options": [
+        "Sonsal olasılığı",
+        "Önsel olasılığı",
+        "Kanıtı",
+        "Ayrım fonksiyonunu"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_12"
+    },
+    {
+      "id": 158,
+      "topic": "havuz",
+      "question": "p(x|ωj) terimi neyi ifade eder?",
+      "options": [
+        "Sonsal olasılık",
+        "Karar yüzeyi",
+        "Olabilirlik / sınıf-koşullu yoğunluk",
+        "Risk matrisi"
+      ],
+      "correctIndex": 2,
+      "explanation": "",
+      "source": "havuz_mc_13"
+    },
+    {
+      "id": 159,
+      "topic": "havuz",
+      "question": "P(ωj|x) terimi neyi ifade eder?",
+      "options": [
+        "Ölçümden önceki sınıf olasılığı",
+        "Ölçümden sonraki sınıf olasılığı",
+        "Sadece yanlış sınıflandırma maliyeti",
+        "Örnek sayısını"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_14"
+    },
+    {
+      "id": 160,
+      "topic": "havuz",
+      "question": "Bayes formülündeki p(x) terimi için aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Kanıttır ve sınıflar arasında ortak olduğu için karşılaştırmada sadeleşebilir",
+        "Her zaman sıfırdır",
+        "Önsel ile aynıdır",
+        "Yalnızca iki sınıflı durumda kullanılır"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_15"
+    },
+    {
+      "id": 161,
+      "topic": "havuz",
+      "question": "İki sınıflı minimum hata kuralında karar hangi sınıfa verilir?",
+      "options": [
+        "Önseli küçük olana",
+        "Posterioru büyük olana",
+        "Varyansı büyük olana",
+        "Örnek sayısı az olana"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_16"
+    },
+    {
+      "id": 162,
+      "topic": "havuz",
+      "question": "MAP kuralı aşağıdakilerden hangisine eşdeğerdir?",
+      "options": [
+        "arg min p(x)",
+        "arg max P(ωi|x)",
+        "arg max λ(αi|ωj)",
+        "arg min özellik sayısı"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_17"
+    },
+    {
+      "id": 163,
+      "topic": "havuz",
+      "question": "Asimetrik kayıp fonksiyonu fikrini en iyi açıklayan örnek hangisidir?",
+      "options": [
+        "Spam ile spam olmayan e-postanın aynı maliyetli olması",
+        "Kanserliyi sağlıklı sanmanın daha pahalı olması",
+        "Tüm hataların eşit maliyetli olması",
+        "Özellik seçiminin maliyetsiz olması"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_18"
+    },
+    {
+      "id": 164,
+      "topic": "havuz",
+      "question": "Ret eylemi ne zaman anlamlıdır?",
+      "options": [
+        "Belirsizlik yüksekken karar vermek pahalıysa",
+        "Sınıflar tamamen ayrık olduğunda",
+        "Önsel olasılıklar bilinmiyorsa",
+        "Her zaman zorunludur"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_19"
+    },
+    {
+      "id": 165,
+      "topic": "havuz",
+      "question": "Koşullu risk en doğru biçimde nasıl tanımlanır?",
+      "options": [
+        "Bir kararın gözlem x verildiğinde beklenen maliyeti",
+        "Sadece eğitim kümesindeki hata sayısı",
+        "Özellik sayısının fonksiyonu",
+        "Veri tabanının boyutu"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_20"
+    },
+    {
+      "id": 166,
+      "topic": "havuz",
+      "question": "Genel Bayes ilkesi hangi kararı seçer?",
+      "options": [
+        "En küçük beklenen kaybı veren kararı",
+        "En yüksek varyansı veren kararı",
+        "En çok özelliği kullanan kararı",
+        "En karmaşık karar yüzeyini"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_21"
+    },
+    {
+      "id": 167,
+      "topic": "havuz",
+      "question": "Minimax kriterinin temel amacı nedir?",
+      "options": [
+        "Ortalama riski minimize etmek",
+        "En kötü durum riskini kontrol etmek",
+        "Her sınıf için ayrı önsel öğrenmek",
+        "Özellik sayısını azaltmak"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_22"
+    },
+    {
+      "id": 168,
+      "topic": "havuz",
+      "question": "Neyman–Pearson yaklaşımı en çok hangi durumda öne çıkar?",
+      "options": [
+        "İki hata türünden birini belirli sınır altında tutmak istendiğinde",
+        "Önsel olasılık bilinmediğinde her şeyi rastgele seçmek için",
+        "Yalnızca çok sınıflı PCA problemlerinde",
+        "Sadece etiketli veri yoksa"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_23"
+    },
+    {
+      "id": 169,
+      "topic": "havuz",
+      "question": "Ayrım fonksiyonları ile karar yüzeyleri arasındaki ilişki nedir?",
+      "options": [
+        "Karar yüzeyi, ayrım fonksiyonlarının eşit olduğu sınırlarla ilişkilidir",
+        "Karar yüzeyi yalnızca histogramdan çıkar",
+        "Ayrım fonksiyonu sadece tek sınıfta tanımlıdır",
+        "İkisi tamamen bağımsız kavramlardır"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_24"
+    },
+    {
+      "id": 170,
+      "topic": "havuz",
+      "question": "Çok kategorili durumda karar kuralı genel olarak nasıl ifade edilir?",
+      "options": [
+        "Her zaman ilk sınıf seçilir",
+        "En küçük indeksli sınıf seçilir",
+        "En büyük ayrım fonksiyonu / posterioru veren sınıf seçilir",
+        "Tüm sınıflar birlikte seçilir Parametrik Kestirim"
+      ],
+      "correctIndex": 2,
+      "explanation": "",
+      "source": "havuz_mc_25"
+    },
+    {
+      "id": 171,
+      "topic": "havuz",
+      "question": "Parametrik kestirimde temel soru nedir?",
+      "options": [
+        "Veriden dağılım parametrelerini nasıl öğreneceğimiz",
+        "Tüm veriyi nasıl sileceğimiz",
+        "Sadece sınıf etiketlerini nasıl artıracağımız",
+        "Karar yüzeyini görselleştirmek"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_26"
+    },
+    {
+      "id": 172,
+      "topic": "havuz",
+      "question": "MLE'nin temel fikri aşağıdakilerden hangisidir?",
+      "options": [
+        "Veriyi en olası kılan parametreyi seçmek",
+        "En küçük veri kümesini seçmek",
+        "Ön bilgiye hiç bakmadan rastgele parametre seçmek",
+        "Sadece doğruluk oranını çizmek"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_27"
+    },
+    {
+      "id": 173,
+      "topic": "havuz",
+      "question": "Olabilirlik çarpımına log alınmasının en önemli nedeni nedir?",
+      "options": [
+        "Posterioru yok etmek",
+        "Çarpımı toplama çevirerek sayısal kararlılık ve türev kolaylığı sağlamak",
+        "Önsel olasılığı büyütmek",
+        "Veri sayısını azaltmak"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_28"
+    },
+    {
+      "id": 174,
+      "topic": "havuz",
+      "question": "Gaussian durumda ortalama için MLE tahmini hangi niceliğe karşılık gelir?",
+      "options": [
+        "Medyan",
+        "Aritmetik ortalama",
+        "Mod",
+        "Varyans"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_29"
+    },
+    {
+      "id": 175,
+      "topic": "havuz",
+      "question": "Bayes kestirimi MLE'den hangi yönüyle ayrılır?",
+      "options": [
+        "Veri kullanmaz",
+        "Ön bilgiyi de hesaba katar",
+        "Dağılım varsayımını tamamen kaldırır",
+        "Yalnızca ayrık veride çalışır"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_30"
+    },
+    {
+      "id": 176,
+      "topic": "havuz",
+      "question": "Az veri varken hangi yaklaşım genellikle daha güvenilir olabilir?",
+      "options": [
+        "Sadece MLE",
+        "Bayes kestirimi",
+        "Rastgele seçim",
+        "Yalnızca histogram"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_31"
+    },
+    {
+      "id": 177,
+      "topic": "havuz",
+      "question": "Boyutluluk laneti ifadesi neyi anlatır?",
+      "options": [
+        "Boyut arttıkça gerekli veri miktarının hızla artmasını",
+        "Boyut azaldıkça her modelin bozulmasını",
+        "Sadece hesap makinesi hatasını",
+        "Yalnızca görüntü boyutunu"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_32"
+    },
+    {
+      "id": 178,
+      "topic": "havuz",
+      "question": "Gereksiz özellik eklemenin olası sonucu nedir?",
+      "options": [
+        "Her zaman başarı artar",
+        "Sınıflandırıcı zayıflayabilir ve daha fazla veri gerekir",
+        "Önsel olasılıklar kaybolur",
+        "Kayıp fonksiyonu tanımsız olur"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_33"
+    },
+    {
+      "id": 179,
+      "topic": "havuz",
+      "question": "EM algoritması en çok hangi senaryoda yararlıdır?",
+      "options": [
+        "Tüm etiketler kesin biliniyorsa",
+        "Karışım bileşenleri gibi gizli atamalar varken",
+        "Yalnızca tek veri noktası varsa",
+        "Ön işleme aşamasında gürültü silerken"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_34"
+    },
+    {
+      "id": 180,
+      "topic": "havuz",
+      "question": "EM'in E-adımında genel olarak ne yapılır?",
+      "options": [
+        "Parametreler rastgele sıfırlanır",
+        "Gizli değişkenlerle ilgili beklentiler / sorumluluklar hesaplanır",
+        "Özellik sayısı azaltılır",
+        "Sadece test verisi seçilir"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_35"
+    },
+    {
+      "id": 181,
+      "topic": "havuz",
+      "question": "EM'in M-adımında genel olarak ne yapılır?",
+      "options": [
+        "Mevcut beklentilere göre parametreler güncellenir",
+        "Veri etiketleri silinir",
+        "Risk matrisi oluşturulur",
+        "Pencere genişliği seçilir"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_36"
+    },
+    {
+      "id": 182,
+      "topic": "havuz",
+      "question": "Gaussian karışım modelleri bağlamında EM neyi öğrenebilir?",
+      "options": [
+        "Her bileşenin ağırlık, ortalama ve kovaryansını",
+        "Yalnızca tek bir global ortalamayı",
+        "Sadece sınıf adlarını",
+        "Yalnızca bir karar ağacını"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_37"
+    },
+    {
+      "id": 183,
+      "topic": "havuz",
+      "question": "Aşırı öğrenme ile ilgili doğru ifade hangisidir?",
+      "options": [
+        "Model basitleştikçe kesin olur",
+        "Eğitim verisini aşırı iyi açıklayan model yeni veride başarısız olabilir",
+        "Sadece Bayes yöntemlerinde görülür",
+        "Veri azaldıkça her zaman kaybolur"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_38"
+    },
+    {
+      "id": 184,
+      "topic": "havuz",
+      "question": "Parametrik yaklaşımın temel riski aşağıdakilerden hangisidir?",
+      "options": [
+        "Model formu yanlışsa sistematik hata üretmesi",
+        "Çok fazla veri istememesi",
+        "Hiç varsayım yapmaması",
+        "Yalnızca iki boyutta çalışması"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_39"
+    },
+    {
+      "id": 185,
+      "topic": "havuz",
+      "question": "MLE ile Bayes kestirimi arasındaki temel sezgisel fark aşağıdakilerden hangisidir?",
+      "options": [
+        "Biri yalnızca veriye, diğeri veri + ön bilgiye bakar",
+        "Biri denetimli, diğeri denetimsizdir",
+        "Biri sadece HMM içindir",
+        "Biri sadece k-NN içindir Parametrik Olmayan Yöntemler"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_40"
+    },
+    {
+      "id": 186,
+      "topic": "havuz",
+      "question": "Parametrik olmayan yöntemlerin temel avantajı nedir?",
+      "options": [
+        "Dağılım formu varsayımını zorunlu kılmaması",
+        "Her zaman daha az veri istemesi",
+        "Hesaplama maliyetini sıfırlaması",
+        "Yalnızca tek sınıfta çalışması"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_41"
+    },
+    {
+      "id": 187,
+      "topic": "havuz",
+      "question": "Bölge tabanlı yoğunluk sezgisine göre bir bölgede çok nokta varsa ne beklenir?",
+      "options": [
+        "Düşük yoğunluk",
+        "Yüksek yoğunluk",
+        "Sıfır olasılık",
+        "Sabit posterior"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_42"
+    },
+    {
+      "id": 188,
+      "topic": "havuz",
+      "question": "Histogram yaklaşımında temel denge problemi nedir?",
+      "options": [
+        "Küçük bölge gürültülü, büyük bölge aşırı düz olabilir",
+        "Her zaman tek doğru kutu vardır",
+        "Bölge boyutu sonucu etkilemez",
+        "Histogram sadece ayrık veri içindir"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_43"
+    },
+    {
+      "id": 189,
+      "topic": "havuz",
+      "question": "Parzen pencerelerinde hangisi sabittir?",
+      "options": [
+        "Komşu sayısı k",
+        "Pencere boyutu / hacim",
+        "Posterior olasılık",
+        "Sınıf sayısı"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_44"
+    },
+    {
+      "id": 190,
+      "topic": "havuz",
+      "question": "k-NN yoğunluk kestiriminde hangisi sabittir?",
+      "options": [
+        "Pencere hacmi V",
+        "Komşu sayısı k",
+        "Öznitelik boyutu",
+        "Tüm mesafeler"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_45"
+    },
+    {
+      "id": 191,
+      "topic": "havuz",
+      "question": "Parzen ile k-NN arasındaki temel fark nasıl özetlenir?",
+      "options": [
+        "Parzen: sabit V, değişken k; k-NN: sabit k, değişken V",
+        "İkisi tamamen aynıdır",
+        "Parzen sadece sınıflandırma içindir",
+        "k-NN sadece yoğunluk içindir"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_46"
+    },
+    {
+      "id": 192,
+      "topic": "havuz",
+      "question": "Parzen penceresindeki h parametresi neyi belirler?",
+      "options": [
+        "Sınıf sayısını",
+        "Ne kadar lokal bakıldığını",
+        "Önsel olasılığı",
+        "Kaybın simetrisini"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_47"
+    },
+    {
+      "id": 193,
+      "topic": "havuz",
+      "question": "Küçük h seçilmesinin tipik sonucu nedir?",
+      "options": [
+        "Aşırı düzleşme",
+        "Yüksek varyans ve aşırı uyum",
+        "Özellik sayısının azalması",
+        "Posteriorun kaybolması"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_48"
+    },
+    {
+      "id": 194,
+      "topic": "havuz",
+      "question": "Büyük h seçilmesinin tipik sonucu nedir?",
+      "options": [
+        "Detay kaybı ve underfitting",
+        "Mutlaka daha iyi genelleme",
+        "Voronoi hücreleri oluşması",
+        "Komşu sayısının sabitlenmesi"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_49"
+    },
+    {
+      "id": 195,
+      "topic": "havuz",
+      "question": "Hiperküp pencere kavramı hangi bağlamda kullanılır?",
+      "options": [
+        "Parzen pencerelerinde bölgenin şekli olarak",
+        "Sadece HMM emisyonlarında",
+        "BBN’de DAG oluştururken",
+        "Bayes riskini tanımlarken"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_50"
+    },
+    {
+      "id": 196,
+      "topic": "havuz",
+      "question": "Gaussian kernelin box kernel karşısındaki üstünlüğü aşağıdakilerden hangisidir?",
+      "options": [
+        "Mesafeye duyarlı ve pürüzsüz olması",
+        "Sadece ikili veri istemesi",
+        "Band genişliğini gereksiz kılması",
+        "Sıfır dışında değer alamaması"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_51"
+    },
+    {
+      "id": 197,
+      "topic": "havuz",
+      "question": "KDE ifadesi neyin genellemesidir?",
+      "options": [
+        "Sadece MLE'nin",
+        "Parzen yaklaşımının farklı çekirdeklerle genellemesinin",
+        "Yalnızca Viterbi'nin",
+        "Neyman–Pearson testinin"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_52"
+    },
+    {
+      "id": 198,
+      "topic": "havuz",
+      "question": "k-NN sınıflandırmasında karar nasıl verilir?",
+      "options": [
+        "En büyük varyanslı sınıf seçilir",
+        "Çoğunluk oylamasıyla",
+        "En küçük önsele göre",
+        "Rastgele"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_53"
+    },
+    {
+      "id": 199,
+      "topic": "havuz",
+      "question": "1-NN durumunda karar bölgelerini açıklayan kavram hangisidir?",
+      "options": [
+        "CPT tabloları",
+        "Voronoi hücreleri",
+        "Karışım ağırlıkları",
+        "Markov zinciri"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_54"
+    },
+    {
+      "id": 200,
+      "topic": "havuz",
+      "question": "k-NN'in büyük veri kümelerinde temel dezavantajı nedir?",
+      "options": [
+        "Ön bilgi istemesi",
+        "Hesaplama maliyetinin yüksek olması",
+        "Yalnızca lineer ayrım yapması",
+        "Hiç sınıflandırma yapamaması Boyutluluk Laneti ve PCA"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_55"
+    },
+    {
+      "id": 201,
+      "topic": "havuz",
+      "question": "Yüksek boyutlu verilerle çalışmanın zorluklarından biri aşağıdakilerden hangisidir?",
+      "options": [
+        "Çalışma süresinin artması",
+        "Özniteliklerin otomatik silinmesi",
+        "Önsel olasılıkların yok olması",
+        "Sadece tek sınıf kalması"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_56"
+    },
+    {
+      "id": 202,
+      "topic": "havuz",
+      "question": "Curse of dimensionality kapsamında n < d² olduğunda slaytlarda vurgulanan paradoks nedir?",
+      "options": [
+        "Daha karmaşık kovaryansın her zaman daha iyi olması",
+        "Bazen yanlış olduğunu bilsek bile bağımsızlık varsayımı daha iyi genelleme verebilir",
+        "Örnek sayısının önemsiz hale gelmesi",
+        "Boyut arttıkça overfitting'in kaybolması"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_57"
+    },
+    {
+      "id": 203,
+      "topic": "havuz",
+      "question": "1-NN için boyut arttıkça temel ihtiyaç nedir?",
+      "options": [
+        "Daha az örnek",
+        "Daha yoğun örnekleme / çok daha fazla örnek",
+        "Daha küçük önsel",
+        "Daha az sınıf"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_58"
+    },
+    {
+      "id": 204,
+      "topic": "havuz",
+      "question": "Sabit örnek sayısında özellik sayısı arttıkça sınıflandırma hatası için genel beklenti nedir?",
+      "options": [
+        "Önce azalabilir, sonra artabilir; optimum bir özellik sayısı olabilir",
+        "Her zaman sıfıra iner",
+        "Tamamen değişmez",
+        "Sadece logaritmik azalır"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_59"
+    },
+    {
+      "id": 205,
+      "topic": "havuz",
+      "question": "Boyut indirgeme için temel amaç nedir?",
+      "options": [
+        "Veriyi yok etmek",
+        "Bilgiyi olabildiğince koruyarak daha düşük boyutta temsil etmek",
+        "Sadece sınıf sayısını azaltmak",
+        "Önsel olasılığı eşitlemek"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_60"
+    },
+    {
+      "id": 206,
+      "topic": "havuz",
+      "question": "PCA'nın temel fikri aşağıdakilerden hangisidir?",
+      "options": [
+        "Sınıf etiketlerine göre en iyi doğrusal sınırı bulmak",
+        "Varyansın en büyük olduğu yönlere projeksiyon yapmak",
+        "Komşu sayısını optimize etmek",
+        "DAG kurmak"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_61"
+    },
+    {
+      "id": 207,
+      "topic": "havuz",
+      "question": "PCA uygulanmadan önce veri üzerinde yapılan temel adım hangisidir?",
+      "options": [
+        "Her özelliği sıralamak",
+        "Ortalamayı çıkararak merkezi sıfıra kaydırmak",
+        "Tüm örnekleri normalize etmeden rastgele çevirmek",
+        "Önsel olasılık eklemek"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_62"
+    },
+    {
+      "id": 208,
+      "topic": "havuz",
+      "question": "PCA'da en önemli yönler nasıl seçilir?",
+      "options": [
+        "En küçük özdeğerlere göre",
+        "En büyük özdeğerlere karşılık gelen özvektörlere göre",
+        "Rastgele vektörlere göre",
+        "Sadece eksenlere paralel vektörlere göre"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_63"
+    },
+    {
+      "id": 209,
+      "topic": "havuz",
+      "question": "PCA’da principal components ifadesi en yakın hangi anlama gelir?",
+      "options": [
+        "Karar yüzeyleri",
+        "Yeni bazdaki katsayılar",
+        "Önsel olasılıklar",
+        "Komşu sayıları"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_64"
+    },
+    {
+      "id": 210,
+      "topic": "havuz",
+      "question": "PCA veri yaklaşımı olarak kullanıldığında ne yapılır?",
+      "options": [
+        "Tüm bileşenler atılır",
+        "İlk k önemli bileşen kullanılarak yaklaşık temsil oluşturulur",
+        "Sadece sınıf etiketleri tutulur",
+        "Yalnızca en küçük varyanslı yönler alınır"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_65"
+    },
+    {
+      "id": 211,
+      "topic": "havuz",
+      "question": "PCA'nın önemli sınırlılığı aşağıdakilerden hangisidir?",
+      "options": [
+        "Sınıflandırma için değil, öncelikle veri temsili için tasarlanmış olması",
+        "Yalnızca 1 boyutta çalışması",
+        "Hiç doğrusal dönüşüm kullanmaması",
+        "Sadece ayrık veri istemesi"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_66"
+    },
+    {
+      "id": 212,
+      "topic": "havuz",
+      "question": "Maksimum varyans yönü sınıflandırma için her zaman en iyi yön müdür?",
+      "options": [
+        "Evet, her zaman",
+        "Hayır, sınıfları ayırmayan yüksek varyans yönleri de olabilir",
+        "Sadece iki sınıfta evet",
+        "Yalnızca Gaussian veride hayır"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_67"
+    },
+    {
+      "id": 213,
+      "topic": "havuz",
+      "question": "PCA ile 2B veriyi 1B’ye indirgerken amaçlanan projeksiyon kriteri nedir?",
+      "options": [
+        "Projeksiyon hatasını büyütmek",
+        "Projeksiyon hatasını küçültmek",
+        "Komşu sayısını sabitlemek",
+        "Posterioru sıfırlamak"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_68"
+    },
+    {
+      "id": 214,
+      "topic": "havuz",
+      "question": "PCA doğrusal bir yöntem olarak hangi araçla temsil edilir?",
+      "options": [
+        "Tek bir skalerle",
+        "Bir dönüşüm matrisiyle",
+        "Yalnızca karar ağacıyla",
+        "Bir DAG ile"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_69"
+    },
+    {
+      "id": 215,
+      "topic": "havuz",
+      "question": "Yüksek boyutlu yüz verisi örneği, lecture 7’de hangi mesaj için kullanılmıştır?",
+      "options": [
+        "Her piksel yeni bir özellik olduğunda veri ihtiyacının patlayabildiğini göstermek",
+        "Renk histogramının yeterli olduğunu göstermek",
+        "HMM'in PCA'dan üstün olduğunu göstermek",
+        "BBN'nin her durumda zorunlu olduğunu göstermek"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_70"
+    },
+    {
+      "id": 216,
+      "topic": "havuz",
+      "question": "BBN en doğru biçimde nasıl tanımlanır?",
+      "options": [
+        "Yönlü çevrimli bir ağ",
+        "Koşullu bağımlılıkları DAG ile gösteren olasılıksal grafik model",
+        "Sadece doğrusal regresyon modeli",
+        "Yalnızca sınıflandırma ağacı"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_71"
+    },
+    {
+      "id": 217,
+      "topic": "havuz",
+      "question": "BBN'de düğümler neyi temsil eder?",
+      "options": [
+        "Yalnızca sınıf etiketlerini",
+        "Rastgele değişkenleri",
+        "Sadece gözlem dizilerini",
+        "Karar sınırlarını"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_72"
+    },
+    {
+      "id": 218,
+      "topic": "havuz",
+      "question": "BBN'de kenarlar neyi ifade eder?",
+      "options": [
+        "Dosya bağlantılarını",
+        "Yönlü bağımlılık ilişkilerini",
+        "Sadece korelasyonu değil hiçbir şeyi",
+        "Özvektörleri"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_73"
+    },
+    {
+      "id": 219,
+      "topic": "havuz",
+      "question": "DAG yapısının temel özelliği nedir?",
+      "options": [
+        "Çevrim içermemesi",
+        "Mutlaka tam bağlı olması",
+        "Tüm düğümlerin kök olması",
+        "Yalnızca iki düğüm içermesi"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_74"
+    },
+    {
+      "id": 220,
+      "topic": "havuz",
+      "question": "BBN'in birleşik olasılık dağılımı nasıl çarpanlara ayrılır?",
+      "options": [
+        "Her değişken yalnızca ebeveynlerine koşullu olacak şekilde",
+        "Sadece marjinal olasılıkların toplamı olarak",
+        "Yalnızca iki değişkenli ürün olarak",
+        "Hiçbir şekilde ayrılamaz"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_76"
+    },
+    {
+      "id": 221,
+      "topic": "havuz",
+      "question": "CPT kısaltması neyi ifade eder?",
+      "options": [
+        "Conditional Probability Table",
+        "Component Projection Transform",
+        "Central Posterior Tensor",
+        "Class Prediction Tree"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_77"
+    },
+    {
+      "id": 222,
+      "topic": "havuz",
+      "question": "BBN'in avantajlarından biri aşağıdakilerden hangisidir?",
+      "options": [
+        "Yeni kanıt geldikçe olasılıkların güncellenebilmesi",
+        "Her zaman en basit model olması",
+        "Hiç uzmanlık gerektirmemesi",
+        "Uzun dizilerde Transformer'dan iyi olması"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_78"
+    },
+    {
+      "id": 223,
+      "topic": "havuz",
+      "question": "BBN'in dezavantajlarından biri aşağıdakilerden hangisidir?",
+      "options": [
+        "DAG yapısını kurmanın zor olabilmesi",
+        "Kanıt güncellemesi yapamaması",
+        "Koşullu olasılık kullanmaması",
+        "Görsel olarak anlaşılamaması"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_79"
+    },
+    {
+      "id": 224,
+      "topic": "havuz",
+      "question": "BBN hangi tür çıkarımı destekleyebilir?",
+      "options": [
+        "Sadece neden-sonuç",
+        "Sadece sonuç-neden",
+        "Hem neden-sonuç hem sonuç-neden",
+        "Hiçbiri HMM"
+      ],
+      "correctIndex": 2,
+      "explanation": "",
+      "source": "havuz_mc_80"
+    },
+    {
+      "id": 225,
+      "topic": "havuz",
+      "question": "HMM'de 'hidden' ifadesi neyi anlatır?",
+      "options": [
+        "Gözlemlerin gizli olduğunu",
+        "Durumların doğrudan gözlenemediğini",
+        "Algoritmanın şifreli olduğunu",
+        "Sadece geçiş matrisinin gizli olduğunu"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_81"
+    },
+    {
+      "id": 226,
+      "topic": "havuz",
+      "question": "Markov özelliği aşağıdakilerden hangisidir?",
+      "options": [
+        "Gelecek durum tüm geçmişe bağlıdır",
+        "Gelecek durum yalnızca mevcut duruma bağlı kabul edilir",
+        "Gözlemler bağımsızdır",
+        "Geçiş olasılıkları eşittir"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_82"
+    },
+    {
+      "id": 227,
+      "topic": "havuz",
+      "question": "Markov zinciri ile HMM arasındaki temel fark nedir?",
+      "options": [
+        "HMM’de geçiş yoktur",
+        "Markov zincirinde durumlar gözlenebilir, HMM’de gizlidir",
+        "Markov zinciri yalnızca ses verisinde kullanılır",
+        "HMM’de gözlem yoktur"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_83"
+    },
+    {
+      "id": 228,
+      "topic": "havuz",
+      "question": "Bir HMM’i tanımlayan temel bileşenlerden biri değildir?",
+      "options": [
+        "Başlangıç olasılıkları π",
+        "Geçiş matrisi A",
+        "Emisyon matrisi B",
+        "Voronoi hücreleri"
+      ],
+      "correctIndex": 3,
+      "explanation": "",
+      "source": "havuz_mc_84"
+    },
+    {
+      "id": 229,
+      "topic": "havuz",
+      "question": "Forward algoritması hangi soruyu cevaplar?",
+      "options": [
+        "En olası gizli durum dizisi nedir?",
+        "Bu gözlem dizisinin model altında olasılığı nedir?",
+        "Kaç gizli durum vardır?",
+        "En iyi kernel hangisidir?"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_85"
+    },
+    {
+      "id": 230,
+      "topic": "havuz",
+      "question": "Viterbi algoritması hangi soruyu cevaplar?",
+      "options": [
+        "Posterioru toplar",
+        "En olası gizli durum dizisini bulur",
+        "Yalnızca başlangıç olasılığını hesaplar",
+        "Özdeğerleri sıralar"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_86"
+    },
+    {
+      "id": 231,
+      "topic": "havuz",
+      "question": "Baum–Welch hangi probleme karşılık gelir?",
+      "options": [
+        "Evaluation",
+        "Decoding",
+        "Learning",
+        "Preprocessing"
+      ],
+      "correctIndex": 2,
+      "explanation": "",
+      "source": "havuz_mc_87"
+    },
+    {
+      "id": 232,
+      "topic": "havuz",
+      "question": "HMM’de emisyon matrisi neyi gösterir?",
+      "options": [
+        "Bir durumdan diğerine geçişi",
+        "Gizli durumdan hangi gözlemin üretileceğini",
+        "Karar yüzeyinin eğimini",
+        "Sınıflar arası kaybı"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "source": "havuz_mc_88"
+    },
+    {
+      "id": 233,
+      "topic": "havuz",
+      "question": "HMM'in güçlü yönlerinden biri aşağıdakilerden hangisidir?",
+      "options": [
+        "Ardışık verileri doğal biçimde modelleyebilmesi",
+        "Her zaman global optimum bulması",
+        "Gizli durum sayısını otomatik garantili belirlemesi",
+        "Yalnızca etiketli veriyle çalışması"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_89"
+    },
+    {
+      "id": 234,
+      "topic": "havuz",
+      "question": "HMM'in sınırlılıklarından biri aşağıdakilerden hangisidir?",
+      "options": [
+        "Durum sayısının önceden belirlenmesinin zor olması",
+        "Geçiş matrisi kullanmaması",
+        "Ardışık veriyle ilgisiz olması",
+        "Hiç uygulama alanının olmaması"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "source": "havuz_mc_90"
     }
   ],
   "fib": [
@@ -1766,7 +3287,8 @@
         "ön işleme (preprocessing)",
         "özellik çıkarımı (feature extraction)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 2,
@@ -1776,7 +3298,8 @@
         "eğri/doğru",
         "yüzey"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 3,
@@ -1785,7 +3308,8 @@
         "aşırı öğrenme (overfitting)",
         "genelleme (generalization)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 4,
@@ -1795,7 +3319,8 @@
         "denetimsiz (unsupervised)",
         "pekiştirmeli (reinforcement)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 5,
@@ -1803,7 +3328,8 @@
       "answers": [
         "değişmezlik (invariance)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 6,
@@ -1811,7 +3337,8 @@
       "answers": [
         "bağlam (context)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 7,
@@ -1819,7 +3346,8 @@
       "answers": [
         "özellik çıkarımı (feature extraction)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 8,
@@ -1827,7 +3355,8 @@
       "answers": [
         "karar (decision)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 9,
@@ -1836,7 +3365,8 @@
         "özellik vektörü (feature vector)",
         "özellik uzayı (feature space)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 10,
@@ -1845,7 +3375,8 @@
         "genelleme",
         "karmaşıklık"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "giris"
     },
     {
       "id": 11,
@@ -1854,7 +3385,8 @@
         "önsel (prior)",
         "kanıt (evidence)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 12,
@@ -1863,7 +3395,8 @@
         "minimize",
         "optimal"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 13,
@@ -1871,7 +3404,8 @@
       "answers": [
         "P(ωi|x)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 14,
@@ -1879,7 +3413,8 @@
       "answers": [
         "olabilirlik (p(x|ω1) ile p(x|ω2))"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 15,
@@ -1887,7 +3422,8 @@
       "answers": [
         "Minimax"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 16,
@@ -1895,7 +3431,8 @@
       "answers": [
         "Neyman-Pearson"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 17,
@@ -1903,7 +3440,8 @@
       "answers": [
         "arg max i"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 18,
@@ -1911,7 +3449,8 @@
       "answers": [
         "karar yüzeyi (decision surface)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 19,
@@ -1919,7 +3458,8 @@
       "answers": [
         "g2(x)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 20,
@@ -1928,7 +3468,8 @@
         "eşik (θ)",
         "önsel olasılıklara"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "bayes"
     },
     {
       "id": 21,
@@ -1936,7 +3477,8 @@
       "answers": [
         "olabilirlik"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 22,
@@ -1944,7 +3486,8 @@
       "answers": [
         "log-olabilirlik (log-likelihood)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 23,
@@ -1953,7 +3496,8 @@
         "aritmetik ortalaması",
         "karesel"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 24,
@@ -1961,7 +3505,8 @@
       "answers": [
         "kovaryans (Σ)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 25,
@@ -1970,7 +3515,8 @@
         "önsel (prior)",
         "sonsal (posterior)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 26,
@@ -1978,7 +3524,8 @@
       "answers": [
         "MLE"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 27,
@@ -1986,7 +3533,8 @@
       "answers": [
         "boyutluluk laneti (curse of dimensionality)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 28,
@@ -1995,7 +3543,8 @@
         "E (Expectation)",
         "M (Maximization)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 29,
@@ -2004,7 +3553,8 @@
         "Gaussian Karışım Modeli (GMM)",
         "EM"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 30,
@@ -2013,7 +3563,8 @@
         "aşırı öğrenme (overfitting)",
         "veri"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "parametrik"
     },
     {
       "id": 31,
@@ -2021,7 +3572,8 @@
       "answers": [
         "önsel (prior) / varsayım"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 32,
@@ -2029,7 +3581,8 @@
       "answers": [
         "V (bölge hacmi)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 33,
@@ -2038,7 +3591,8 @@
         "V (bölge hacmi)",
         "k (komşu sayısı)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 34,
@@ -2046,7 +3600,8 @@
       "answers": [
         "Çekirdek Yoğunluk Kestirimi (Kernel Density Estimation)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 35,
@@ -2054,7 +3609,8 @@
       "answers": [
         "Gaussian"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 36,
@@ -2063,7 +3619,8 @@
         "varyans (dalgalı, overfit)",
         "yanlılık (aşırı düzleşme, underfit)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 37,
@@ -2071,7 +3628,8 @@
       "answers": [
         "h^d"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 38,
@@ -2080,7 +3638,8 @@
         "çakışmaz",
         "bölümler (partition)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 39,
@@ -2088,7 +3647,8 @@
       "answers": [
         "ağırlıklar"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 40,
@@ -2097,7 +3657,8 @@
         "0",
         "∞"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 41,
@@ -2106,7 +3667,8 @@
         "k",
         "V"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 42,
@@ -2114,7 +3676,8 @@
       "answers": [
         "Voronoi"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 43,
@@ -2122,7 +3685,8 @@
       "answers": [
         "çoğunluk (majority voting)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 44,
@@ -2131,7 +3695,8 @@
         "gürültülü (overfit)",
         "fazla düzleşmiş (underfit)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 45,
@@ -2139,7 +3704,8 @@
       "answers": [
         "O(knd)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 46,
@@ -2147,7 +3713,8 @@
       "answers": [
         "ağırlığı"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 47,
@@ -2156,7 +3723,8 @@
         "0",
         "1"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 48,
@@ -2165,7 +3733,8 @@
         "arama ağacı (search tree) / prototip",
         "garanti etmez"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 49,
@@ -2174,7 +3743,8 @@
         "eşit",
         "doğru değildir"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 50,
@@ -2183,7 +3753,8 @@
         "yoğunluk",
         "süreksizlik"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "nonparametrik"
     },
     {
       "id": 51,
@@ -2191,7 +3762,8 @@
       "answers": [
         "DAG (Directed Acyclic Graph)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "bbn"
     },
     {
       "id": 52,
@@ -2200,7 +3772,8 @@
         "rastgele",
         "bağımlılık (koşullu)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "bbn"
     },
     {
       "id": 53,
@@ -2208,7 +3781,8 @@
       "answers": [
         "Koşullu Olasılık Tablosu"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "bbn"
     },
     {
       "id": 54,
@@ -2216,7 +3790,8 @@
       "answers": [
         "Parents(Xi)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "bbn"
     },
     {
       "id": 55,
@@ -2224,7 +3799,8 @@
       "answers": [
         "bağımlılık"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "bbn"
     },
     {
       "id": 56,
@@ -2232,7 +3808,8 @@
       "answers": [
         "P(E)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "bbn"
     },
     {
       "id": 57,
@@ -2240,7 +3817,8 @@
       "answers": [
         "çıkarım"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "bbn"
     },
     {
       "id": 58,
@@ -2248,7 +3826,8 @@
       "answers": [
         "ters"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "bbn"
     },
     {
       "id": 59,
@@ -2256,7 +3835,8 @@
       "answers": [
         "üstel olarak"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "bbn"
     },
     {
       "id": 60,
@@ -2265,7 +3845,8 @@
         "gözlem (kanıt)",
         "kararı"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "bbn"
     },
     {
       "id": 61,
@@ -2273,7 +3854,8 @@
       "answers": [
         "mevcut (şimdiki)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 62,
@@ -2282,7 +3864,8 @@
         "gizli (hidden)",
         "gözlemlenebilir"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 63,
@@ -2292,7 +3875,8 @@
         "geçiş",
         "emisyon"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 64,
@@ -2301,7 +3885,8 @@
         "1",
         "1"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 65,
@@ -2311,7 +3896,8 @@
         "Çözümleme (Decoding)",
         "Öğrenme (Learning)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 66,
@@ -2319,7 +3905,8 @@
       "answers": [
         "Forward"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 67,
@@ -2329,7 +3916,8 @@
         "MAX",
         "backpointer"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 68,
@@ -2337,7 +3925,8 @@
       "answers": [
         "Baum-Welch"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 69,
@@ -2346,7 +3935,8 @@
         "etmez",
         "başlangıç"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 70,
@@ -2355,7 +3945,8 @@
         "konuşma",
         "el yazısı (handwriting) / POS etiketleme"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "hmm"
     },
     {
       "id": 71,
@@ -2365,7 +3956,8 @@
         "artar",
         "aşırı öğrenme (overfitting)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "tekrar"
     },
     {
       "id": 72,
@@ -2373,7 +3965,8 @@
       "answers": [
         "Bayes"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "tekrar"
     },
     {
       "id": 73,
@@ -2382,7 +3975,8 @@
         "parametreler",
         "varsayım"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "tekrar"
     },
     {
       "id": 74,
@@ -2391,7 +3985,8 @@
         "bağlam (context)",
         "ayarlaması"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "tekrar"
     },
     {
       "id": 75,
@@ -2400,7 +3995,8 @@
         "toplamı",
         "maksimumu"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "tekrar"
     },
     {
       "id": 76,
@@ -2408,7 +4004,8 @@
       "answers": [
         "olasılıksal (probabilistic)"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "tekrar"
     },
     {
       "id": 77,
@@ -2417,7 +4014,8 @@
         "EM",
         "Baum-Welch"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "tekrar"
     },
     {
       "id": 78,
@@ -2426,7 +4024,8 @@
         "bant genişliği h",
         "komşu sayısı k"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "tekrar"
     },
     {
       "id": 79,
@@ -2435,7 +4034,8 @@
         "seyrek",
         "güvenilmez"
       ],
-      "explanation": ""
+      "explanation": "",
+      "topic": "tekrar"
     },
     {
       "id": 80,
@@ -2444,7 +4044,1071 @@
         "sonsal (posterior)",
         "MAP (Maximum A Posteriori)"
       ],
+      "explanation": "",
+      "topic": "tekrar"
+    },
+    {
+      "id": 81,
+      "topic": "pca",
+      "sentence": "Parametrik yöntemlerde seçilen modelin gerçek veriyi temsil edememesine ________ (model bias / model yanlılığı) denir.",
+      "answers": [
+        "model yanlılığı"
+      ],
       "explanation": ""
+    },
+    {
+      "id": 82,
+      "topic": "pca",
+      "sentence": "PCA uygulanmadan önce veriden ________ çıkarılarak veri merkeze alınır.",
+      "answers": [
+        "ortalama"
+      ],
+      "explanation": "Örneklem ortalaması çıkarılır (centering)."
+    },
+    {
+      "id": 83,
+      "topic": "pca",
+      "sentence": "PCA’da scatter matrisi merkeze alınmış vektör z ile hesaplanır; z̄ = x̄ − ________.",
+      "answers": [
+        "μ̂ (örneklem ortalaması) veya örneklem ortalaması"
+      ],
+      "explanation": ""
+    },
+    {
+      "id": 84,
+      "topic": "pca",
+      "sentence": "Boyut d’den k’ya indirgemek için scatter matrisinin en büyük k ________ değerine karşılık gelen k adet özvektör seçilir.",
+      "answers": [
+        "özdeğer"
+      ],
+      "explanation": ""
+    },
+    {
+      "id": 85,
+      "topic": "pca",
+      "sentence": "PCA’da koordinat dönüşümü y = ________ · z ile yapılır; burada E sütunları seçilen özvektörler olan matristir.",
+      "answers": [
+        "E^T",
+        "E^⊤"
+      ],
+      "explanation": ""
+    },
+    {
+      "id": 86,
+      "topic": "pca",
+      "sentence": "PCA’nın temel dezavantajı, doğru veri ________ için tasarlanmış olması ve ayrım (discrimination) performansını garanti etmemesidir.",
+      "answers": [
+        "temsili"
+      ],
+      "explanation": ""
+    },
+    {
+      "id": 87,
+      "topic": "pca",
+      "sentence": "Sabit örnek sayısıyla özellik sayısı arttıkça hata önce azalıp sonra artabilir; bu nedenle her n için bir ________ özellik sayısı seçmek gerekir.",
+      "answers": [
+        "optimal",
+        "en uygun"
+      ],
+      "explanation": ""
+    },
+    {
+      "id": 88,
+      "topic": "pca",
+      "sentence": "Boyut indirgeme için eski özellikler x’ten y’ye geçişte kullanılan lineer dönüşüm bir ________ (projeksiyon) matrisi W ile ifade edilebilir.",
+      "answers": [
+        "dönüşüm",
+        "projeksiyon"
+      ],
+      "explanation": ""
+    },
+    {
+      "id": 89,
+      "topic": "pca",
+      "sentence": "PCA, eksenleri döndürerek ________ varyans yönlerini ortaya çıkaran yeni bir ortogonal baz oluşturur.",
+      "answers": [
+        "maksimum",
+        "en büyük"
+      ],
+      "explanation": ""
+    },
+    {
+      "id": 90,
+      "topic": "pca",
+      "sentence": "1 boyutta n örnek yeterli yerel yoğunluğu sağlıyorsa, d boyutta benzer kalite için gereken örnek miktarı kabaca ________ ile ölçeklenir (lanet üstel doğası).",
+      "answers": [
+        "n^d"
+      ],
+      "explanation": ""
+    },
+    {
+      "id": 91,
+      "topic": "pca",
+      "sentence": "Boyutun laneti bağlamında n < d² iken özellikler ilişkisiz varsayıldığında daha az parametreli ________ riskini azaltan modeller tercih edilebilir.",
+      "answers": [
+        "overfitting",
+        "aşırı uyum"
+      ],
+      "explanation": ""
+    },
+    {
+      "id": 92,
+      "topic": "pca",
+      "sentence": "Parzen yoğunluk kestiriminde birim hiperküp penceresi [−1/2,1/2]^d üzerinde φ(u) içerde ________, dışarıda ________ alır (kutu çekirdek).",
+      "answers": [
+        "1",
+        "0"
+      ],
+      "explanation": ""
+    },
+    {
+      "id": 93,
+      "topic": "pca",
+      "sentence": "Parzen’i histogramdan ayıran kayan pencere özelliğinin İngilizce adı ________ window’dur.",
+      "answers": [
+        "sliding"
+      ],
+      "explanation": ""
+    },
+    {
+      "id": 94,
+      "topic": "havuz",
+      "sentence": "Ham veriden sınıf kararına giden örüntü tanıma işleminde, binlerce pikselden tek etikete geçiş bir ________indirgemesi olarak açıklanır.",
+      "answers": [
+        "bilgi"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_1"
+    },
+    {
+      "id": 95,
+      "topic": "havuz",
+      "sentence": "Balık örneği boru hattısında ön işleme ile sınıflandırma arasında yer alan adımlardan biri ________çıkarımıdır.",
+      "answers": [
+        "özellik"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_2"
+    },
+    {
+      "id": 96,
+      "topic": "havuz",
+      "sentence": "Işık, açı ve gürültü gibi etkenler aynı nesnenin farklı görünmesine yol açtığı için örüntü tanıma zorlaşır; bu durum veri içindeki ________ile ilişkilidir.",
+      "answers": [
+        "değişkenlik"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_3"
+    },
+    {
+      "id": 97,
+      "topic": "havuz",
+      "sentence": "Eğitimde çok iyi, testte kötü performans gösteren model problemi ________öğrenme olarak adlandırılır. Bayesian Karar Teorisi",
+      "answers": [
+        "aşırı"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_4"
+    },
+    {
+      "id": 98,
+      "topic": "havuz",
+      "sentence": "Bayes formülünde ölçümden önceki sınıf olasılığına ________olasılık denir.",
+      "answers": [
+        "önsel"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_5"
+    },
+    {
+      "id": 99,
+      "topic": "havuz",
+      "sentence": "Bayes formülünde P(ωj|x) ifadesi ________olasılığı gösterir.",
+      "answers": [
+        "sonsal"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_6"
+    },
+    {
+      "id": 100,
+      "topic": "havuz",
+      "sentence": "İki sınıflı minimum hata ilkesinde, karar genellikle posterioru en ________olan sınıfa verilir.",
+      "answers": [
+        "büyük"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_7"
+    },
+    {
+      "id": 101,
+      "topic": "havuz",
+      "sentence": "Belirsiz durumlarda karar vermek yerine kararın ertelenmesine ________eylemi denebilir.",
+      "answers": [
+        "ret"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_8"
+    },
+    {
+      "id": 102,
+      "topic": "havuz",
+      "sentence": "Belirli bir x gözlemlendiğinde beklenen maliyete koşullu ________denir. Parametrik Kestirim",
+      "answers": [
+        "risk"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_9"
+    },
+    {
+      "id": 103,
+      "topic": "havuz",
+      "sentence": "MLE, veriyi en olası kılan ________değerini seçer.",
+      "answers": [
+        "parametre"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_10"
+    },
+    {
+      "id": 104,
+      "topic": "havuz",
+      "sentence": "Olabilirlik çarpımını toplama dönüştürmek için genellikle ________alınır.",
+      "answers": [
+        "logaritma"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_11"
+    },
+    {
+      "id": 105,
+      "topic": "havuz",
+      "sentence": "Az veri varken ön bilgi de kullanan yaklaşım ________kestirimidir.",
+      "answers": [
+        "Bayes"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_12"
+    },
+    {
+      "id": 106,
+      "topic": "havuz",
+      "sentence": "Gizli atamaları tahmin edip parametreleri güncelleyen yinelemeli yöntem ________algoritmasıdır.",
+      "answers": [
+        "EM"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_13"
+    },
+    {
+      "id": 107,
+      "topic": "havuz",
+      "sentence": "Boyut arttıkça veri ihtiyacının hızla büyümesine ________laneti denir. Parametrik Olmayan Yöntemler",
+      "answers": [
+        "boyutluluk"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_14"
+    },
+    {
+      "id": 108,
+      "topic": "havuz",
+      "sentence": "Dağılım formunu baştan varsaymayan yöntemlere ________olmayan yöntemler denir.",
+      "answers": [
+        "parametrik"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_15"
+    },
+    {
+      "id": 109,
+      "topic": "havuz",
+      "sentence": "Parzen yönteminde pencere genişliği parametresi genellikle ________ile gösterilir.",
+      "answers": [
+        "h"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_16"
+    },
+    {
+      "id": 110,
+      "topic": "havuz",
+      "sentence": "k-NN'de komşu sayısı sabit tutulur, buna karşılık pencere ________değişir.",
+      "answers": [
+        "hacmi"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_17"
+    },
+    {
+      "id": 111,
+      "topic": "havuz",
+      "sentence": "Her yeni örneğe en yakın tek eğitim örneğinin etiketi veriliyorsa bu yöntem ________-NN olarak adlandırılır.",
+      "answers": [
+        "1"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_18"
+    },
+    {
+      "id": 112,
+      "topic": "havuz",
+      "sentence": "Gaussian kernel, box kernel’e göre daha ________bir yoğunluk kestirimi üretir. Boyutluluk Laneti ve PCA",
+      "answers": [
+        "pürüzsüz"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_19"
+    },
+    {
+      "id": 113,
+      "topic": "havuz",
+      "sentence": "PCA, varyansın en ________olduğu yönleri bulmaya çalışır.",
+      "answers": [
+        "büyük"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_20"
+    },
+    {
+      "id": 114,
+      "topic": "havuz",
+      "sentence": "PCA uygulanmadan önce veri genellikle ortalaması çıkarılarak ________edilir.",
+      "answers": [
+        "merkezlenir"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_21"
+    },
+    {
+      "id": 115,
+      "topic": "havuz",
+      "sentence": "PCA’da en önemli yönler, en büyük özdeğerlere karşılık gelen öz________lerdir.",
+      "answers": [
+        "vektör"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_22"
+    },
+    {
+      "id": 116,
+      "topic": "havuz",
+      "sentence": "Düşük boyutlu yaklaşık temsil için PCA genellikle ilk k ana ________kullanır. Bayesian Belief Networks",
+      "answers": [
+        "bileşeni"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_23"
+    },
+    {
+      "id": 117,
+      "topic": "havuz",
+      "sentence": "BBN’de çevrim içermeyen yönlü grafik yapısına ________denir.",
+      "answers": [
+        "DAG"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_24"
+    },
+    {
+      "id": 118,
+      "topic": "havuz",
+      "sentence": "Bir düğümün ebeveynlerine göre olasılıklarını veren tabloya ________denir.",
+      "answers": [
+        "CPT"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_25"
+    },
+    {
+      "id": 119,
+      "topic": "havuz",
+      "sentence": "Naive Bayes, tüm özelliklerin birbirinden ________olduğunu varsayar. HMM",
+      "answers": [
+        "bağımsız"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_26"
+    },
+    {
+      "id": 120,
+      "topic": "havuz",
+      "sentence": "HMM’de gizli durumlar arasındaki geçiş olasılıklarını gösteren matris ________matrisidir.",
+      "answers": [
+        "geçiş"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_27"
+    },
+    {
+      "id": 121,
+      "topic": "havuz",
+      "sentence": "Gizli durumdan hangi gözlemin üretileceğini gösteren B matrisi ________matrisidir.",
+      "answers": [
+        "emisyon"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_28"
+    },
+    {
+      "id": 122,
+      "topic": "havuz",
+      "sentence": "Gözlem dizisinin model altındaki olasılığını verimli biçimde hesaplayan yöntem ________algoritmasıdır.",
+      "answers": [
+        "Forward"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_29"
+    },
+    {
+      "id": 123,
+      "topic": "havuz",
+      "sentence": "En olası gizli durum dizisini bulan algoritma ________algoritmasıdır.",
+      "answers": [
+        "Viterbi"
+      ],
+      "explanation": "",
+      "source": "havuz_fb_30"
+    }
+  ],
+  "topics": [
+    {
+      "id": "giris",
+      "label": "Giriş ve genel kavramlar"
+    },
+    {
+      "id": "bayes",
+      "label": "Bayes karar teorisi"
+    },
+    {
+      "id": "parametrik",
+      "label": "Parametrik kestirim ve GMM"
+    },
+    {
+      "id": "nonparametrik",
+      "label": "Parametrik olmayan yoğunluk ve k-NN"
+    },
+    {
+      "id": "bbn",
+      "label": "Bayesian Belief Network (BBN)"
+    },
+    {
+      "id": "hmm",
+      "label": "Gizli Markov modeli (HMM)"
+    },
+    {
+      "id": "pca",
+      "label": "PCA ve boyut indirgeme"
+    },
+    {
+      "id": "tekrar",
+      "label": "Karışık tekrar"
+    },
+    {
+      "id": "havuz",
+      "label": "Vize soru havuzu (ek çoktan seçmeli/boşluk)"
+    }
+  ],
+  "tf": [
+    {
+      "id": 1,
+      "topic": "pca",
+      "statement": "Parametrik yöntemlerde dağılımın yapısı (formu) baştan bilinir ve yalnızca parametreler tahmin edilir.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 2,
+      "topic": "pca",
+      "statement": "Parametrik olmayan yöntemler, parametrik yöntemlere göre daha az veriye ihtiyaç duyar.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 3,
+      "topic": "pca",
+      "statement": "Eşit olasılığa sahip iki bölgenin yoğunlukları her zaman eşittir.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 4,
+      "topic": "pca",
+      "statement": "Histogram yönteminde her kutunun içinde yoğunluğun sabit olduğu kabul edilir.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 5,
+      "topic": "pca",
+      "statement": "Parzen pencerelerinde bölge hacmi V her x noktasında farklıdır.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 6,
+      "topic": "pca",
+      "statement": "k-NN yöntemi adaptif bir yöntemdir; bölge boyutu veri yoğunluğuna göre otomatik ayarlanır.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 7,
+      "topic": "pca",
+      "statement": "Parzen yönteminde pencere genişliği h büyük seçilirse kestirim dalgalı ve gürültülü olur.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 8,
+      "topic": "pca",
+      "statement": "Birim hiperküp pencere fonksiyonu ￿(u), bir veri noktasının pencere içinde olup olmadığını belirlemek için kullanılır.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 9,
+      "topic": "pca",
+      "statement": "Kutu (box) kernel ile elde edilen yoğunluk eğrisi pürüzsüz ve sürekli bir yapıdadır.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 10,
+      "topic": "pca",
+      "statement": "KDE’de Gaussian çekirdek kullanıldığında, pencere içindeki her noktaya uzaklığına göre azalan bir ağırlık verilir. 3",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 11,
+      "topic": "pca",
+      "statement": "Parzen yönteminde her x için pencere o noktanın etrafına yeniden kurulur (kayan pencere).",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 12,
+      "topic": "pca",
+      "statement": "d boyutlu uzayda hiperküpün hacmi V = h + d formülüyle hesaplanır.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 13,
+      "topic": "pca",
+      "statement": "Parzen pencereleri doğrudan posterior olasılık P(c￿ x) kestirimi yapar.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 14,
+      "topic": "pca",
+      "statement": "k-NN yöntemi olabilirlik kestirimi adımını atlayarak doğrudan posterior olasılık kestirimi yapabilir.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 15,
+      "topic": "pca",
+      "statement": "Boyut d arttıkça aynı yoğunluğu korumak için gereken örnek sayısı doğrusal olarak artar.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 16,
+      "topic": "pca",
+      "statement": "20×20 piksellik yüz görüntüleri",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 17,
+      "topic": "pca",
+      "statement": "Boyutun laneti yalnızca hesaplama maliyetini etkiler; doğruluk üzerinde etkisi yoktur.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 18,
+      "topic": "pca",
+      "statement": "PCA, veriyi en büyük varyans yönüne yansıtarak boyut indirgeme yapar.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 19,
+      "topic": "pca",
+      "statement": "PCA uygulanmadan önce veriden ortalama çıkarılması (centering) gereklidir.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 20,
+      "topic": "pca",
+      "statement": "PCA’da küçük özdeğerlere karşılık gelen özvektörler en önemli bileşenlerdir.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 21,
+      "topic": "pca",
+      "statement": "PCA her zaman sınıflandırma açısından en iyi boyut indirgeme yöntemini sağlar.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 22,
+      "topic": "pca",
+      "statement": "Sabit örnek sayısıyla daha fazla özellik eklemek her zaman sınıflandırma performansını artırır.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 23,
+      "topic": "pca",
+      "statement": "PCA’da özvektörler birbirine dik (ortogonal) olmalıdır.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 24,
+      "topic": "pca",
+      "statement": "Scatter matrisi S hesaplanırken verinin ortalaması sıfır yapılmış olmalıdır. 4",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 25,
+      "topic": "pca",
+      "statement": "Boyut indirgeme yalnızca doğrusal (lineer) dönüşümlerle yapılabilir.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 26,
+      "topic": "pca",
+      "statement": "Parzen yönteminde MLE kullanılarak bölge olasılığı ￿̂ = k/n şeklinde tahmin edilir.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 27,
+      "topic": "pca",
+      "statement": "Histogram yaklaşımının performansı kutu genişliğinin (bin width) seçimine bağlı değildir.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 28,
+      "topic": "pca",
+      "statement": "k-NN’de yoğun bölgelerde V küçük, seyrek bölgelerde V büyük olur.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 29,
+      "topic": "pca",
+      "statement": "PCA, kovaryans matrisinin özvektörlerini kullanarak yeni koordinat sistemi oluşturur.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 30,
+      "topic": "pca",
+      "statement": "n < d² durumunda tam kovaryans matrisi kullanmak, diyagonal kovaryans varsayımından her zaman daha iyi sonuç verir.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "hafta5_pca"
+    },
+    {
+      "id": 31,
+      "topic": "nonparametrik",
+      "statement": "Gaussian çekirdek fonksiyonu u = 0’da minimum değerini alır.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "hafta6"
+    },
+    {
+      "id": 32,
+      "topic": "nonparametrik",
+      "statement": "Box kernel ile elde edilen yoğunluk eğrisi basamaklı (step-like) bir yapıdadır ve ani sıçramalar içerir.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "hafta6"
+    },
+    {
+      "id": 33,
+      "topic": "nonparametrik",
+      "statement": "Gaussian çekirdek kullanıldığında, bir veri noktasının katkısı belirli bir mesafeden sonra aniden sıfıra düşer.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "hafta6"
+    },
+    {
+      "id": 34,
+      "topic": "nonparametrik",
+      "statement": "Parzen yönteminde pencere genişliği h küçüldükçe kestirim daha pürüzsüz hale gelir.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "hafta6"
+    },
+    {
+      "id": 35,
+      "topic": "nonparametrik",
+      "statement": "Parzen yönteminde n = 10, h = 0.5 değerleri N(0,1) dağılımı için en iyi dengeyi sağlar.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "hafta6"
+    },
+    {
+      "id": 36,
+      "topic": "nonparametrik",
+      "statement": "Örnek sayısı n sonsuza gittiğinde, Parzen yöntemi hangi h değeri seçilirse seçilsin gerçek dağılıma yakınsar. 2",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "hafta6"
+    },
+    {
+      "id": 37,
+      "topic": "nonparametrik",
+      "statement": "k-NN yoğunluk kestiriminde pencere boyutu V önceden sabitlenir.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "hafta6"
+    },
+    {
+      "id": 38,
+      "topic": "nonparametrik",
+      "statement": "k-NN yoğunluk kestiriminde, verinin yoğun olduğu bölgelerde V büyük, seyrek bölgelerde V küçük olur.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "hafta6"
+    },
+    {
+      "id": 39,
+      "topic": "nonparametrik",
+      "statement": "k-NN ile doğrudan yapılan yoğunluk kestirimi pratikte her zaman geçerli bir yoğunluk fonksiyonu üretir.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "hafta6"
+    },
+    {
+      "id": 40,
+      "topic": "nonparametrik",
+      "statement": "1-NN yönteminde Voronoi hücreleri net ve keskin sınırlar üretir.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "hafta6"
+    },
+    {
+      "id": 41,
+      "topic": "nonparametrik",
+      "statement": "k > 1 olduğunda çoğunluk oylaması devreye girer ve Voronoi sınırları yumuşar.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "hafta6"
+    },
+    {
+      "id": 42,
+      "topic": "nonparametrik",
+      "statement": "k-NN sınıflandırmasında k değeri büyüdükçe karar sınırları her zaman daha doğru olur.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "hafta6"
+    },
+    {
+      "id": 43,
+      "topic": "nonparametrik",
+      "statement": "k-NN’nin hesaplama karmaşıklığı O(knd) olup, veri büyüdükçe hesaplama maliyeti artar.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "hafta6"
+    },
+    {
+      "id": 44,
+      "topic": "nonparametrik",
+      "statement": "k-NN yönteminde özellik ölçekleme (normalization) yapılmadan mesafe hesabı güvenilir sonuçlar üretir.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "hafta6"
+    },
+    {
+      "id": 45,
+      "topic": "nonparametrik",
+      "statement": "k-NN yöntemi herhangi bir dağılım varsayımı gerektirmez.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "hafta6"
+    },
+    {
+      "id": 46,
+      "topic": "nonparametrik",
+      "statement": "Parzen pencerelerinde Gaussian çekirdek kullanıldığında yoğunluk fonksiyonu türevlenemez bir yapıda olur.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "hafta6"
+    },
+    {
+      "id": 47,
+      "topic": "nonparametrik",
+      "statement": "k-NN’de küçük k değeri yerel bilgiye dayanarak sınır bölgelerinde daha doğru karar verebilir.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "hafta6"
+    },
+    {
+      "id": 48,
+      "topic": "nonparametrik",
+      "statement": "Voronoi diyagramında boyut arttıkça yapı daha basit hale gelir.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "hafta6"
+    },
+    {
+      "id": 49,
+      "topic": "nonparametrik",
+      "statement": "k-NN yönteminde arama ağacı kullanıldığında gerçek en yakın komşu her zaman garanti edilir. 3",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "hafta6"
+    },
+    {
+      "id": 50,
+      "topic": "nonparametrik",
+      "statement": "Z-score normalizasyonu uygulandığında her özelliğin ortalaması 0, varyansı 1 olur.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "hafta6"
+    },
+    {
+      "id": 51,
+      "topic": "bayes",
+      "statement": "Bayesian karar teorisi, dağılımlar bilindiğinde daha iyi bir sınıflandırıcı üretilemeyeceğini garanti eder.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "ch2_bayes_dy"
+    },
+    {
+      "id": 52,
+      "topic": "bayes",
+      "statement": "Bayes formülünde kanıt terimi p(x), sınıflandırma kararını doğrudan etkiler.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "ch2_bayes_dy"
+    },
+    {
+      "id": 53,
+      "topic": "bayes",
+      "statement": "P(￿￿) = P(￿￿) ve simetrik kayıp durumunda karar yalnızca olabilirlik karşılaştırmasına indirgenir.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "ch2_bayes_dy"
+    },
+    {
+      "id": 54,
+      "topic": "bayes",
+      "statement": "Minimax kriteri, önsel olasılıkların kesin olarak bilindiği durumlarda tercih edilir.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "ch2_bayes_dy"
+    },
+    {
+      "id": 55,
+      "topic": "bayes",
+      "statement": "Neyman-Pearson kriteri, toplam riski minimize ederken belirli bir hata türüne üst sınır koyar.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "ch2_bayes_dy"
+    },
+    {
+      "id": 56,
+      "topic": "bayes",
+      "statement": "Sıfır-bir kayıp fonksiyonunda tüm hatalar aynı maliyete sahiptir.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "ch2_bayes_dy"
+    },
+    {
+      "id": 57,
+      "topic": "bayes",
+      "statement": "Karar bölgeleri her zaman tek parça (simply connected) olmak zorun- dadır.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "ch2_bayes_dy"
+    },
+    {
+      "id": 58,
+      "topic": "bayes",
+      "statement": "Lineer bir ayrım fonksiyonu g(x) = w￿x + w￿ şeklinde ifade edilir.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "ch2_bayes_dy"
+    },
+    {
+      "id": 59,
+      "topic": "bayes",
+      "statement": "Ortalama hata olasılığı P(hata) = ￿ P(hata|x) p(x) dx formülüyle hesa- planır.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "ch2_bayes_dy"
+    },
+    {
+      "id": 60,
+      "topic": "bayes",
+      "statement": "Koşullu risk hesaplanırken yalnızca önsel olasılıklar kullanılır, sonsal olasılıklara gerek yoktur.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "ch2_bayes_dy"
+    },
+    {
+      "id": 61,
+      "topic": "parametrik",
+      "statement": "MLE tahmini, veri sayısı arttıkça gerçek parametreye yaklaşır.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "ch3_param_dy"
+    },
+    {
+      "id": 62,
+      "topic": "parametrik",
+      "statement": "Log-olabilirlik alınması, maksimum noktasının konumunu değiştirir.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "ch3_param_dy"
+    },
+    {
+      "id": 63,
+      "topic": "parametrik",
+      "statement": "MLE ile Bayesian kestirim, veri sayısı çok fazla olduğunda birbirine yakın sonuç üretir.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "ch3_param_dy"
+    },
+    {
+      "id": 64,
+      "topic": "parametrik",
+      "statement": "Bayesian kestirimde geniş bir önsel dağılım, veriye daha fazla söz hakkı tanır.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "ch3_param_dy"
+    },
+    {
+      "id": 65,
+      "topic": "parametrik",
+      "statement": "Kovaryans matrisinde köşegen dışı elemanlar sıfır ise iki özellik bir- birinden bağımsızdır.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "ch3_param_dy"
+    },
+    {
+      "id": 66,
+      "topic": "parametrik",
+      "statement": "Boyutluluk laneti nedeniyle gereksiz özellikler eklemek sınıflandırıcıyı her zaman güçlendirir.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "ch3_param_dy"
+    },
+    {
+      "id": 67,
+      "topic": "parametrik",
+      "statement": "EM algoritması her iterasyonda geriye gidebilir, yani olabilirlik azala- bilir.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "ch3_param_dy"
+    },
+    {
+      "id": 68,
+      "topic": "parametrik",
+      "statement": "Overfitting durumunda eğitim hatası düşük iken test hatası yüksektir.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "ch3_param_dy"
+    },
+    {
+      "id": 69,
+      "topic": "parametrik",
+      "statement": "Gaussian Karışım Modeli (GMM), veriyi birden fazla Gaussian bileşeniyle temsil eder.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "ch3_param_dy"
+    },
+    {
+      "id": 70,
+      "topic": "parametrik",
+      "statement": "MLE varyans tahmini ￿̂² = (1/n) Σ(x￿ − ￿̂)² yansız (unbiased) bir tahmincidir.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "ch3_param_dy"
+    },
+    {
+      "id": 71,
+      "topic": "bbn",
+      "statement": "BBN, eksik veri içeren veri setleriyle çalışabilir; tüm değişkenlerin gözlemlenmesi gerekmez.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "bbn_hmm_pdf"
+    },
+    {
+      "id": 72,
+      "topic": "bbn",
+      "statement": "Standart BBN modelleri hem ayrık hem de sürekli değişkenler için eşit derecede uygundur, herhangi bir ön işlem gerekmez.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "bbn_hmm_pdf"
+    },
+    {
+      "id": 73,
+      "topic": "hmm",
+      "statement": "HMM'de geçiş matrisinin (A) her satırındaki değerlerin toplamı 1 olmalıdır.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "bbn_hmm_pdf"
+    },
+    {
+      "id": 74,
+      "topic": "hmm",
+      "statement": "Forward Algoritması, gözlem dizisini en iyi açıklayan tek bir gizli durum dizisi döndürür.",
+      "correctTrue": false,
+      "explanation": "",
+      "source": "bbn_hmm_pdf"
+    },
+    {
+      "id": 75,
+      "topic": "hmm",
+      "statement": "BBN'de ileri yönlü ilişki R → G (yağmur çimi ıslatır) tanımlanmışsa, G gözlemlendiğinde P(R|G) de hesaplanabilir.",
+      "correctTrue": true,
+      "explanation": "",
+      "source": "bbn_hmm_pdf"
     }
   ]
 }

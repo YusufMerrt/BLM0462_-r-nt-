@@ -63,6 +63,61 @@ body {
   margin-top: 1rem;
 }
 
+.topic-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.topic-label {
+  font-size: 0.85rem;
+  opacity: 0.95;
+  white-space: nowrap;
+}
+
+.topic-select {
+  font: inherit;
+  padding: 0.45rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  max-width: min(100%, 18rem);
+  cursor: pointer;
+}
+
+.topic-select option {
+  color: #1a202c;
+}
+
+.topic-tag {
+  margin: -0.35rem 0 0.75rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.options-tf {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+  max-width: 28rem;
+}
+
+.options-tf .option {
+  padding: 0.65rem 0.85rem;
+  border-radius: var(--radius);
+  border: 2px solid var(--border);
+}
+
+.options-tf .option:hover {
+  border-color: var(--primary);
+}
+
+.toolbar .filter-group {
+  max-width: 100%;
+}
+
 .filter-group {
   display: flex;
   flex-wrap: wrap;

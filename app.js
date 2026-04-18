@@ -2,7 +2,9 @@
  * BLM0462 Vize Quiz — tek soru modu, anında doğru/yanlış
  */
 (function () {
-  const LETTERS = ["A", "B", "C", "D", "E"];
+  function letterFor(i) {
+    return String.fromCharCode(65 + i);
+  }
 
   function normalizeANS(s) {
     if (s == null) return "";
@@ -46,8 +48,27 @@
   let queue = [];
   let currentIndex = 0;
   let filter = "all";
-  /** @type Map<string, { revealed: boolean, mcqIndex?: number, fibValues?: string[] }> */
+  let topicFilter = "all";
+  /**
+   * @type Map<string, {
+   *   revealed: boolean,
+   *   mcqIndex?: number,
+   *   fibValues?: string[],
+   * }>
+   */
   const memory = new Map();
+
+  function tfToMcqShape(q) {
+    return {
+      id: q.id,
+      topic: q.topic,
+      question: q.statement,
+      options: ["Doğru", "Yanlış"],
+      correctIndex: q.correctTrue ? 0 : 1,
+      explanation: q.explanation || "",
+      _plainText: true,
+    };
+  }
 
   const els = {
     title: document.getElementById("app-title"),
@@ -55,6 +76,7 @@
     main: document.getElementById("quiz-main"),
     progress: document.getElementById("progress"),
     btnReset: document.getElementById("btn-reset"),
+    topicSelect: document.getElementById("topic-filter"),
   };
 
   function getKey(item) {
@@ -64,9 +86,22 @@
   function buildQueue() {
     const mcq = data.mcq.map((q) => ({ type: "mcq", data: q }));
     const fib = data.fib.map((q) => ({ type: "fib", data: q }));
-    if (filter === "mcq") return mcq;
-    if (filter === "fib") return fib;
-    return [...mcq, ...fib];
+    const tf = (data.tf || []).map((q) => ({ type: "tf", data: q }));
+    let items;
+    if (filter === "mcq") items = mcq;
+    else if (filter === "fib") items = fib;
+    else if (filter === "tf") items = tf;
+    else items = [...mcq, ...fib, ...tf];
+    if (topicFilter !== "all") {
+      items = items.filter((it) => (it.data.topic || "") === topicFilter);
+    }
+    return items;
+  }
+
+  function topicLabel(slug) {
+    if (!slug || !data.topics) return "";
+    const t = data.topics.find((x) => x.id === slug);
+    return t ? t.label : slug;
   }
 
   function loadData() {
@@ -91,17 +126,29 @@
     card.className = "card card-single";
 
     const h = document.createElement("h3");
-    h.textContent = `Çoktan seçmeli · Soru ${q.id}`;
+    h.textContent =
+      q._tfKind === "dy"
+        ? `Doğru / Yanlış · Soru ${q.id}`
+        : `Çoktan seçmeli · Soru ${q.id}`;
     card.appendChild(h);
+    if (q.topic) {
+      const tag = document.createElement("p");
+      tag.className = "topic-tag";
+      tag.textContent = topicLabel(q.topic);
+      card.appendChild(tag);
+    }
 
     const p = document.createElement("p");
     p.className = "q-text";
-    p.innerHTML = q.question;
+    if (q._plainText) p.textContent = q.question;
+    else p.innerHTML = q.question;
     card.appendChild(p);
 
     const opts = document.createElement("div");
-    opts.className = "options";
+    opts.className =
+      q._tfKind === "dy" ? "options options-tf" : "options";
 
+    const nOpt = q.options.length;
     q.options.forEach((opt, i) => {
       const label = document.createElement("label");
       label.className = "option";
@@ -115,7 +162,8 @@
 
       const spanL = document.createElement("span");
       spanL.className = "label";
-      spanL.textContent = `${LETTERS[i]})`;
+      spanL.textContent =
+        nOpt <= 5 ? `${letterFor(i)})` : `${i + 1})`;
 
       const spanT = document.createElement("span");
       spanT.className = "text";
@@ -138,6 +186,12 @@
     const h = document.createElement("h3");
     h.textContent = `Boşluk doldurma · Soru ${q.id}`;
     card.appendChild(h);
+    if (q.topic) {
+      const tag = document.createElement("p");
+      tag.className = "topic-tag";
+      tag.textContent = topicLabel(q.topic);
+      card.appendChild(tag);
+    }
 
     const { parts } = splitFibSentence(q.sentence);
     const nFromUnderscore = Math.max(0, parts.length - 1);
@@ -205,7 +259,9 @@
 
   function getMcqCorrectText(q) {
     const i = q.correctIndex;
-    return `${LETTERS[i]}) ${q.options[i]}`;
+    const pref =
+      q.options.length <= 5 ? letterFor(i) : String(i + 1);
+    return `${pref}) ${q.options[i]}`;
   }
 
   function escapeHtml(s) {
@@ -218,8 +274,9 @@
     feedbackEl.classList.remove("hidden", "feedback-ok", "feedback-bad");
     feedbackEl.classList.add(ok ? "feedback-ok" : "feedback-bad");
 
-    if (item.type === "mcq") {
-      const q = item.data;
+    if (item.type === "mcq" || item.type === "tf") {
+      const q =
+        item.type === "tf" ? tfToMcqShape(item.data) : item.data;
       if (ok) {
         feedbackEl.innerHTML =
           '<p class="feedback-title">Doğru!</p>' +
@@ -266,7 +323,7 @@
     const existing = memory.get(key);
     if (existing && existing.revealed) return;
 
-    if (item.type === "mcq") {
+    if (item.type === "mcq" || item.type === "tf") {
       const sel = els.main.querySelector('.card input[type="radio"]:checked');
       if (sel) {
         memory.set(key, {
@@ -298,6 +355,23 @@
       applyMcqReveal(card, item.data);
       const ok = idx === item.data.correctIndex;
       fillFeedbackPanel(feedbackEl, ok, item);
+      btnCheck.disabled = true;
+      btnNext.disabled = false;
+      return;
+    }
+
+    if (item.type === "tf") {
+      const sel = card.querySelector('input[type="radio"]:checked');
+      if (!sel) {
+        alert("Lütfen Doğru veya Yanlış seçin.");
+        return;
+      }
+      const idx = parseInt(sel.value, 10);
+      const m = tfToMcqShape(item.data);
+      memory.set(key, { revealed: true, mcqIndex: idx });
+      applyMcqReveal(card, m);
+      const ok = idx === m.correctIndex;
+      fillFeedbackPanel(feedbackEl, ok, { type: "tf", data: item.data });
       btnCheck.disabled = true;
       btnNext.disabled = false;
       return;
@@ -343,10 +417,16 @@
     const wrap = document.createElement("div");
     wrap.className = "single-wrap";
 
-    const card =
-      item.type === "mcq"
-        ? renderMcqCard(item.data, mem)
-        : renderFibCard(item.data, mem);
+    let card;
+    if (item.type === "mcq") {
+      card = renderMcqCard(item.data, mem);
+    } else if (item.type === "tf") {
+      const wrapped = tfToMcqShape(item.data);
+      wrapped._tfKind = "dy";
+      card = renderMcqCard(wrapped, mem);
+    } else {
+      card = renderFibCard(item.data, mem);
+    }
 
     const feedback = document.createElement("div");
     feedback.id = "feedback-panel";
@@ -386,6 +466,11 @@
         applyMcqReveal(card, item.data);
         const ok = mem.mcqIndex === item.data.correctIndex;
         fillFeedbackPanel(feedback, ok, item);
+      } else if (item.type === "tf") {
+        const m = tfToMcqShape(item.data);
+        applyMcqReveal(card, m);
+        const ok = mem.mcqIndex === m.correctIndex;
+        fillFeedbackPanel(feedback, ok, { type: "tf", data: item.data });
       } else {
         applyFibReveal(card, item.data);
         const inputs = [...card.querySelectorAll(".fib-input")];
@@ -447,6 +532,36 @@
     renderCurrent();
   }
 
+  function applyTopicFilter() {
+    if (!els.topicSelect) return;
+    topicFilter = els.topicSelect.value || "all";
+    queue = buildQueue();
+    currentIndex = 0;
+    renderCurrent();
+  }
+
+  function fillTopicOptions() {
+    if (!els.topicSelect || !data.topics) return;
+    const sel = els.topicSelect;
+    sel.innerHTML = "";
+    const o0 = document.createElement("option");
+    o0.value = "all";
+    o0.textContent = "Tüm konular";
+    sel.appendChild(o0);
+    data.topics.forEach((t) => {
+      const o = document.createElement("option");
+      o.value = t.id;
+      o.textContent = t.label;
+      sel.appendChild(o);
+    });
+    if ([...sel.options].some((o) => o.value === topicFilter)) {
+      sel.value = topicFilter;
+    } else {
+      topicFilter = "all";
+      sel.value = "all";
+    }
+  }
+
   function resetAll() {
     memory.clear();
     currentIndex = 0;
@@ -458,6 +573,9 @@
     document.querySelectorAll("[data-filter]").forEach((btn) => {
       btn.addEventListener("click", () => applyFilter(btn));
     });
+    if (els.topicSelect) {
+      els.topicSelect.addEventListener("change", () => applyTopicFilter());
+    }
     els.btnReset.addEventListener("click", () => {
       if (confirm("Tüm cevaplar ve ilerleme sıfırlansın mı?")) resetAll();
     });
@@ -470,6 +588,7 @@
       " — Tek tek soru; kontrol edince doğru/yanlış ve doğru cevap gösterilir.";
 
     queue = buildQueue();
+    fillTopicOptions();
     initToolbar();
     renderCurrent();
   }
