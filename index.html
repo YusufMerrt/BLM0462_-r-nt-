@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BLM0462 — Örüntü Tanıma</title>
+  <style>
+    :root {
+      --bg: #f0f4f8;
+      --primary: #2b6cb0;
+      --primary-dark: #1a365d;
+      --card: #ffffff;
+      --border: #e2e8f0;
+      --muted: #4a5568;
+      --radius: 10px;
+      --shadow: 0 2px 8px rgba(26, 54, 93, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: #1a202c;
+      line-height: 1.5;
+      font-size: 16px;
+    }
+    header {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      color: #fff;
+      padding: 1.5rem 1.25rem 1.75rem;
+      box-shadow: var(--shadow);
+    }
+    header h1 { margin: 0 0 0.35rem; font-size: 1.4rem; }
+    header p { margin: 0; opacity: 0.92; font-size: 0.95rem; }
+    main { max-width: 42rem; margin: 0 auto; padding: 1.25rem; }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem 1.15rem;
+      margin-bottom: 1rem;
+      box-shadow: var(--shadow);
+    }
+    section h2 {
+      margin: 0 0 0.75rem;
+      font-size: 1.05rem;
+      color: var(--primary-dark);
+    }
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff !important;
+      text-decoration: none;
+      padding: 0.55rem 1rem;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+    .btn:hover { filter: brightness(1.05); }
+    ul { margin: 0; padding-left: 1.2rem; }
+    li { margin: 0.35rem 0; }
+    a:not(.btn) { color: var(--primary); }
+    .hint { font-size: 0.85rem; color: var(--muted); margin-top: 0.75rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BLM0462 — Örüntü Tanıma</h1>
+    <p>Notlar (PDF) ve vize soru bankası quiz</p>
+  </header>
+  <main>
+    <section>
+      <h2>Quiz</h2>
+      <p>Çoktan seçmeli ve boşluk doldurma soruları için:</p>
+      <p><a class="btn" href="quiz-web/index.html">Vize soru bankası quiz’e git</a></p>
+    </section>
+    <section>
+      <h2>PDF notları</h2>
+      <p>Aşağıdaki linkler, bu repodaki dosyalara gider; tarayıcıda açılır veya indirir.</p>
+      <ul>
+        <li><a href="BBN_Ders_Notu%20(2).pdf">BBN ders notu</a></li>
+        <li><a href="BLM0462 Örüntü Tanıma - Hafta 1_v2.pdf">Hafta 1</a></li>
+        <li><a href="HMM_Ders_Notu%20(2).pdf">HMM ders notu</a></li>
+        <li><a href="Pattern_Recognition_Vize_Soru_Bankasi.pdf">Pattern Recognition — Vize soru bankası (PDF)</a></li>
+        <li><a href="blm0462_chapter2_bayes.pdf">Bölüm 2 — Bayes</a></li>
+        <li><a href="blm0462_chapter3.pdf">Bölüm 3</a></li>
+        <li><a href="parzen_window_hafta5_v2.pdf">Parzen window — Hafta 5</a></li>
+        <li><a href="ttb-Lecture7v2%20(3).pdf">Ders 7</a></li>
+        <li><a href="Unite4_hafta6%20(2).pdf">Ünite 4 — Hafta 6</a></li>
+        <li><a href="Unite4_hafta6-part2%20(2).pdf">Ünite 4 — Hafta 6 (bölüm 2)</a></li>
+      </ul>
+      <p class="hint">Dosya adını repoda değiştirirsen, bu listedeki <code>href=&quot;…&quot;</code> kısmını da aynı isme göre güncelle.</p>
+    </section>
+  </main>
+</body>
+</html>
